@@ -259,6 +259,16 @@ main {
   padding: 20px;
 }
 
+.operator-hero > *,
+.assistant-hero > *,
+.operator-lanes > *,
+.command-center-grid > *,
+.office-command-grid > *,
+.action-layout > *,
+.split > * {
+  min-width: 0;
+}
+
 .assistant-hero h2 {
   font-size: clamp(25px, 4vw, 42px);
   line-height: 1.06;
@@ -336,9 +346,11 @@ main {
 
 .operator-lane {
   min-height: 100%;
+  min-width: 0;
 }
 
 .assistant-panel {
+  min-width: 0;
   padding: 16px;
 }
 
@@ -414,6 +426,65 @@ main {
   color: #30363a;
   font-size: 13px;
   padding: 9px 10px;
+}
+
+.reply-plan-box {
+  background: #fbfcf8;
+  border: 1px solid #d9e0d5;
+  border-radius: 8px;
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+
+.reply-plan-box header {
+  align-items: flex-start;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.reply-plan-box header b {
+  display: block;
+  font-size: 13px;
+}
+
+.reply-plan-box header span,
+.reply-plan-box p {
+  color: #3b4244;
+  display: block;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.reply-plan-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.reply-plan-option.suggested {
+  background: var(--green-soft);
+  border-color: #a8cbbd;
+  color: var(--green);
+}
+
+.reply-plan-box.compact {
+  padding: 8px;
+}
+
+.reply-plan-box.compact header {
+  display: none;
+}
+
+.reply-plan-box.compact .reply-plan-options {
+  gap: 6px;
+}
+
+.reply-plan-box.compact .small-link {
+  font-size: 11px;
+  min-height: 26px;
+  padding: 4px 7px;
 }
 
 .assistant-note-list article {

@@ -65,6 +65,77 @@ function reviewButton(label) {
   return `<button type="button" class="small-link public-review-disabled" disabled>${escapeHtml(label)}</button>`;
 }
 
+const REPLY_PLANS = [
+  {
+    id: "need_details",
+    label: "Need details",
+    text: "Thanks for reaching out. Happy to help. Asks for location, dates, creative refs, deliverables, and usage.",
+  },
+  {
+    id: "available",
+    label: "Available",
+    text: "Says you can take a look and asks for the core quote details.",
+  },
+  {
+    id: "unavailable",
+    label: "Not available",
+    text: "Thanks them, says sorry you are not available for this one, leaves door open for future dates.",
+  },
+  {
+    id: "thanks",
+    label: "Thanks",
+    text: "Short acknowledgement for simple positive replies or asset confirmations.",
+  },
+  {
+    id: "quote_followup",
+    label: "Quote next",
+    text: "Acknowledges details and says you will put numbers together.",
+  },
+  {
+    id: "call",
+    label: "Ask call",
+    text: "Asks what time works today or tomorrow.",
+  },
+];
+
+function replyKeyForAction(action) {
+  return action.prepare_reply_key || (action.dismiss_kind === "inbound" ? action.dismiss_key : "");
+}
+
+function replyPlanBox(key, suggested = "need_details", compact = false) {
+  if (!key) return "";
+  const plans = compact ? REPLY_PLANS.slice(0, 4) : REPLY_PLANS;
+  return `
+    <div class="reply-plan-box ${compact ? "compact" : ""}">
+      <header>
+        <div>
+          <b>How to reply</b>
+          <span>Pick the stance. Draft uses the full Gmail thread, keeps threading, Reply-To, and signature.</span>
+        </div>
+        ${statusPill("ok", suggested.replaceAll("_", " "))}
+      </header>
+      <div class="reply-plan-options">
+        ${plans
+          .map(
+            (plan) => `
+              <button
+                type="button"
+                class="small-link reply-plan-option prepare-reply ${plan.id === suggested ? "suggested" : ""}"
+                data-reply-key="${escapeHtml(key)}"
+                data-reply-variant="${escapeHtml(plan.id)}"
+                ${isPublicReview() ? "disabled" : ""}
+              >
+                ${escapeHtml(plan.label)}
+              </button>
+            `,
+          )
+          .join("")}
+      </div>
+      ${compact ? "" : `<p>${escapeHtml((REPLY_PLANS.find((plan) => plan.id === suggested) || REPLY_PLANS[0]).text)}</p>`}
+    </div>
+  `;
+}
+
 function metric(title, value, detail, status = "ok") {
   return `
     <article class="metric ${escapeHtml(status)}">
@@ -247,6 +318,15 @@ function assistantLabel(action) {
   return action.label || action.category || "Task";
 }
 
+function suggestedReplyPlan(action) {
+  const text = `${action.title || ""} ${action.detail || ""} ${action.next_step || ""}`.toLowerCase();
+  if (text.includes("thank") || text.includes("awesome") || text.includes("appreciate") || text.includes("confirmed")) return "thanks";
+  if (text.includes("quote") || text.includes("proposal") || text.includes("rfp")) return "quote_followup";
+  if (text.includes("call") || text.includes("meeting") || text.includes("phone")) return "call";
+  if (text.includes("available") || text.includes("availability")) return "available";
+  return "need_details";
+}
+
 function actionScore(action) {
   const severityScore = { danger: 0, warn: 1, paused: 2, unknown: 3, ok: 4 };
   return severityScore[action.severity] ?? 3;
@@ -279,6 +359,7 @@ function researchRowToAction(row) {
 }
 
 function assistantCard(action, index) {
+  const replyKey = replyKeyForAction(action);
   return `
     <article class="assistant-task ${escapeHtml(action.severity || "warn")}">
       <div class="assistant-task-rank">${index + 1}</div>
@@ -289,6 +370,7 @@ function assistantCard(action, index) {
         </header>
         <p>${safeText(assistantReason(action), 220)}</p>
         <div class="assistant-next">${safeText(action.next_step || "Handle this, then refresh.", 260)}</div>
+        ${action.category === "Inbound" ? replyPlanBox(replyKey, suggestedReplyPlan(action)) : ""}
         ${actionButtons(action)}
       </div>
     </article>
@@ -296,6 +378,7 @@ function assistantCard(action, index) {
 }
 
 function accountLaneCard(action) {
+  const replyKey = replyKeyForAction(action);
   const title = action.category === "Approval"
     ? String(action.title || "").replace(/^Review draft approval:\s*/i, "") || "Draft approval"
     : assistantTitle(action);
@@ -308,6 +391,7 @@ function accountLaneCard(action) {
       </header>
       <p>${safeText(detail, 140)}</p>
       <small>${safeText(action.next_step || assistantReason(action), 150)}</small>
+      ${action.category === "Inbound" ? replyPlanBox(replyKey, suggestedReplyPlan(action), true) : ""}
       ${actionButtons(action)}
     </article>
   `;
@@ -1040,6 +1124,7 @@ function renderAccountDrawer(payload) {
     </section>
     <section class="account-section" id="replyPreviewSection">
       <h3>Reply Intelligence</h3>
+      ${record.waiting_on_colin ? replyPlanBox(payload.key, record.draft_context?.reply_variant || "need_details") : ""}
       <div id="replyPreview" class="reply-preview empty">Preview the reply to see context, intent, and body before creating a Gmail draft.</div>
     </section>
     <section class="account-section">
@@ -1129,6 +1214,7 @@ function renderReplyPreview(payload) {
       ${metric("Mode", payload.mode || "preview", context.segment || "segment unknown", "ok")}
       ${metric("Voice", payload.voice_ok ? "OK" : "Check", flags.join(", ") || "Best rule clean", payload.voice_ok ? "ok" : "warn")}
     </div>
+    ${payload.reply_variant_label ? `<div class="assistant-next"><b>Reply plan</b><span>${escapeHtml(payload.reply_variant_label)}</span></div>` : ""}
     <div class="chips">${(context.signals || []).map((signal) => `<span class="chip">${escapeHtml(signal)}</span>`).join("") || '<span class="quiet">No special signals detected</span>'}</div>
     ${context.internal_after_external ? '<div class="issue warn"><div><span class="pill warn">warning</span></div><div><strong>Internal reply already detected after the latest external message.</strong><p>Check Gmail before sending another reply.</p></div></div>' : ""}
     <div class="draft-preview-box">
@@ -1254,6 +1340,7 @@ function isDraftComposeUrl(url) {
 async function prepareReply(key, trigger) {
   if (!key) return;
   const originalText = trigger ? trigger.textContent : "";
+  const variant = trigger?.dataset?.replyVariant || "";
   if (trigger) {
     trigger.disabled = true;
     trigger.textContent = trigger.dataset?.replyDraftId ? "Checking..." : "Drafting...";
@@ -1261,7 +1348,9 @@ async function prepareReply(key, trigger) {
   const controller = new AbortController();
   const timeout = window.setTimeout(() => controller.abort(), 45_000);
   try {
-    const response = await fetch(`/api/prepare-reply?key=${encodeURIComponent(key)}&open=1`, {
+    const params = new URLSearchParams({ key, open: "1" });
+    if (variant) params.set("variant", variant);
+    const response = await fetch(`/api/prepare-reply?${params.toString()}`, {
       cache: "no-store",
       signal: controller.signal,
     });
