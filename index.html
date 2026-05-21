@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drone Genius Sales Desk</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark" aria-hidden="true">
+          <span></span>
+        </div>
+        <div>
+          <h1>Drone Genius Sales Desk</h1>
+          <p id="lastUpdated">Waiting for system_status.json</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <div id="healthPill" class="pill unknown">Unknown</div>
+        <button id="refreshBtn" type="button">Refresh</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="assistant-desk" id="assistantDesk"></section>
+
+      <section class="overview" id="overview"></section>
+
+      <section class="band action-band">
+        <div class="section-head">
+          <h2>Full Work Queue</h2>
+          <span id="actionCount" class="quiet"></span>
+        </div>
+        <div id="actionCenter"></div>
+      </section>
+
+      <section class="band">
+        <div class="section-head">
+          <h2>Operator Activity</h2>
+          <span id="activityCount" class="quiet"></span>
+        </div>
+        <div id="operatorActivity"></div>
+      </section>
+
+      <details class="system-drawer">
+        <summary>
+          <span>System Diagnostics</span>
+          <small>Logs, agents, cron, health, and raw pipeline state</small>
+        </summary>
+
+        <section class="band">
+          <div class="section-head">
+            <h2>Health</h2>
+            <span id="issueCount" class="quiet"></span>
+          </div>
+          <div id="issues" class="issue-list"></div>
+        </section>
+
+      <section class="band">
+        <div class="section-head">
+          <h2>Pipeline State</h2>
+          <span id="pipelineStamp" class="quiet"></span>
+        </div>
+        <div id="pipeline" class="split"></div>
+      </section>
+
+      <section class="band">
+        <div class="section-head">
+          <h2>Drafts And Approvals</h2>
+          <span id="draftCount" class="quiet"></span>
+        </div>
+        <div id="drafts"></div>
+      </section>
+
+      <section class="band">
+        <div class="section-head">
+          <h2>Cron Jobs</h2>
+          <span id="cronCount" class="quiet"></span>
+        </div>
+        <div id="cron"></div>
+      </section>
+
+      <section class="band">
+        <div class="section-head">
+          <h2>Agents And Subagents</h2>
+          <span id="agentCount" class="quiet"></span>
+        </div>
+        <div id="agents"></div>
+      </section>
+
+      <section class="band">
+        <div class="section-head">
+          <h2>Radar And Inbound</h2>
+          <span id="radarCount" class="quiet"></span>
+        </div>
+        <div id="radarInbound" class="split"></div>
+      </section>
+
+      <section class="band">
+        <div class="section-head">
+          <h2>Logs</h2>
+          <span id="logCount" class="quiet"></span>
+        </div>
+        <div id="logs" class="log-grid"></div>
+      </section>
+
+        <section class="band">
+          <div class="section-head">
+            <h2>State Files</h2>
+            <span id="stateCount" class="quiet"></span>
+          </div>
+          <div id="stateFiles"></div>
+        </section>
+      </details>
+    </main>
+
+    <div id="accountDrawer" class="account-drawer hidden" aria-hidden="true">
+      <div class="account-drawer-backdrop" data-close-account="1"></div>
+      <section class="account-drawer-panel" role="dialog" aria-modal="true" aria-labelledby="accountDrawerTitle">
+        <header class="account-drawer-head">
+          <div>
+            <span class="metric-title">Account</span>
+            <h2 id="accountDrawerTitle">Loading account</h2>
+            <p id="accountDrawerSubtitle" class="quiet"></p>
+          </div>
+          <button type="button" class="small-link" data-close-account="1">Close</button>
+        </header>
+        <div id="accountDrawerBody" class="account-drawer-body"></div>
+      </section>
+    </div>
+
+    <script src="app.js?v=20260520-account-command-center"></script>
+  </body>
+</html>
