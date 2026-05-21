@@ -204,6 +204,12 @@ function isLikelyVendorNoise(action) {
     "seo ",
     "web design",
     "marketing services",
+    "thank you for your purchase",
+    "order confirmation",
+    "purchase receipt",
+    "payment receipt",
+    "your receipt",
+    "bark ",
   ].some((needle) => text.includes(needle));
 }
 
@@ -239,6 +245,20 @@ function assistantLabel(action) {
   if (action.category === "Approval") return "Draft";
   if (action.category === "Radar") return action.label || "Research";
   return action.label || action.category || "Task";
+}
+
+function actionScore(action) {
+  const severityScore = { danger: 0, warn: 1, paused: 2, unknown: 3, ok: 4 };
+  return severityScore[action.severity] ?? 3;
+}
+
+function rankedActions(actions, categories = []) {
+  const allowed = new Set(categories);
+  return (actions || [])
+    .filter((action) => !categories.length || allowed.has(action.category))
+    .filter((action) => !(action.category === "Inbound" && isLikelyVendorNoise(action)))
+    .sort((a, b) => actionScore(a) - actionScore(b))
+    .slice(0, 5);
 }
 
 function researchRowToAction(row) {
@@ -300,6 +320,7 @@ function renderSalesAssistant(data) {
   ].slice(0, 3);
 
   const doNow = [...inbound, ...approvals, ...research].slice(0, 5);
+  const blockedCount = blockers.length + (monday.blocked ? 1 : 0);
   const headline = summary.inbound_waiting
     ? `${number(summary.inbound_waiting)} conversations need attention`
     : summary.pending_approvals
@@ -312,20 +333,20 @@ function renderSalesAssistant(data) {
     : "No urgent lead replies are at the top. Work approvals or prospect research next.";
 
   $("#assistantDesk").innerHTML = `
-    <div class="assistant-hero">
+    <div class="operator-hero">
       <div>
-        <span class="metric-title">Today</span>
+        <span class="metric-title">Operator Focus</span>
         <h2>${escapeHtml(headline)}</h2>
         <p>${escapeHtml(subhead)}</p>
       </div>
       <div class="assistant-scoreboard">
-        <span><b>${number(summary.inbound_waiting)}</b>Lead replies</span>
-        <span><b>${number(summary.pending_approvals)}</b>Drafts</span>
-        <span><b>${number(radar.project_research_queue_count)}</b>Research</span>
-        <span><b>${monday.blocked ? "Blocked" : "OK"}</b>Monday</span>
+        <span class="${summary.inbound_waiting ? "hot" : ""}"><b>${number(summary.inbound_waiting)}</b>Lead replies</span>
+        <span class="${summary.pending_approvals ? "hot" : ""}"><b>${number(summary.pending_approvals)}</b>Draft decisions</span>
+        <span class="${radar.project_research_queue_count ? "warm" : ""}"><b>${number(radar.project_research_queue_count)}</b>Research queue</span>
+        <span class="${blockedCount ? "hot" : ""}"><b>${number(blockedCount)}</b>Blockers</span>
       </div>
     </div>
-    <div class="assistant-grid">
+    <div class="command-center-grid">
       <section class="assistant-panel primary">
         <div class="section-head">
           <h2>Do These First</h2>
@@ -337,7 +358,7 @@ function renderSalesAssistant(data) {
       </section>
       <section class="assistant-panel">
         <div class="section-head">
-          <h2>What The System Is Handling</h2>
+          <h2>Assistant Autopilot</h2>
         </div>
         <div class="assistant-note-list">
           <article><b>Inbox tracking</b><span>Watching Gmail and reminding you until you reply.</span></article>
@@ -355,6 +376,93 @@ function renderSalesAssistant(data) {
           { label: "Status", value: (row) => statusPill(row.severity || "warn", row.label || "blocked") },
           { label: "Issue", value: (row) => `<b>${safeText(row.title, 120)}</b><small>${safeText(row.detail, 170)}</small>` },
         ], "No major blockers")}
+      </section>
+    </div>
+  `;
+}
+
+function renderOfficeBrief(data) {
+  const agents = data.agents || {};
+  const office = data.virtual_office || {};
+  const rooms = office.rooms || [];
+  const workstreams = office.workstreams || [];
+  const subagents = agents.subagents || [];
+  const deterministic = agents.deterministic_agents || [];
+  const events = agents.events || {};
+  const heartbeats = events.heartbeats || [];
+  const activeRooms = rooms.filter((room) => room.status === "ok").length;
+  const issueRooms = rooms.length - activeRooms;
+
+  $("#officeBrief").innerHTML = `
+    <div class="section-head">
+      <div>
+        <h2>Virtual Office</h2>
+        <span class="quiet">${number(rooms.length)} rooms / ${number(deterministic.length)} deterministic agents / ${number(subagents.length)} subagent personas</span>
+      </div>
+      ${statusPill(issueRooms ? "warn" : "ok", issueRooms ? `${number(issueRooms)} room(s) need attention` : "Office active")}
+    </div>
+    <div class="office-command-grid">
+      <section class="office-map">
+        <h3>Rooms</h3>
+        <div class="office-room-rail">
+          ${rooms
+            .slice(0, 6)
+            .map(
+              (room) => `
+                <article class="office-room-mini ${escapeHtml(room.status || "unknown")}">
+                  <header>
+                    <strong>${safeText(room.room, 80)}</strong>
+                    ${statusPill(room.status, statusLabel(room.status))}
+                  </header>
+                  <p>${safeText(room.purpose, 150)}</p>
+                  <small>${safeText(room.next_action, 180)}</small>
+                </article>
+              `,
+            )
+            .join("") || '<div class="empty">No virtual office rooms found.</div>'}
+        </div>
+      </section>
+      <section class="office-map">
+        <h3>What Each Team Is Doing</h3>
+        <div class="workstream-stack">
+          ${workstreams
+            .slice(0, 7)
+            .map(
+              (stream) => `
+                <article class="workstream-row">
+                  ${statusPill(stream.status, statusLabel(stream.status))}
+                  <div>
+                    <strong>${safeText(stream.name, 90)}</strong>
+                    <small>${safeText(stream.handoff, 180)}</small>
+                  </div>
+                </article>
+              `,
+            )
+            .join("") || '<div class="empty">No workstreams found.</div>'}
+        </div>
+      </section>
+      <section class="office-map">
+        <h3>Recent Heartbeats</h3>
+        <div class="heartbeat-list">
+          ${heartbeats
+            .slice(0, 5)
+            .map(
+              (beat) => `
+                <article>
+                  <div>${statusPill(beat.status, beat.agent || statusLabel(beat.status))}<span>${formatDate(beat.at)}</span></div>
+                  <p>${safeText(beat.detail || beat.last_event, 150)}</p>
+                </article>
+              `,
+            )
+            .join("") || '<div class="empty">No local agent heartbeats yet.</div>'}
+        </div>
+        <h3>Gaps</h3>
+        <div class="gap-list compact">
+          ${(office.gaps || [])
+            .slice(0, 2)
+            .map((gap) => `<article class="gap"><span></span><p>${safeText(gap, 220)}</p></article>`)
+            .join("") || '<div class="empty">No office gaps recorded.</div>'}
+        </div>
       </section>
     </div>
   `;
@@ -1306,6 +1414,7 @@ function render(data) {
   $("#lastUpdated").textContent = `${formatDate(data.generated_at)} on ${data.host || "local"}`;
   renderSalesAssistant(data);
   renderOverview(data);
+  renderOfficeBrief(data);
   renderActionCenter(data);
   renderOperatorActivity(data);
   renderHealth(data);
