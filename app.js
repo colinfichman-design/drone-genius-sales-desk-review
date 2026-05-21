@@ -295,6 +295,24 @@ function assistantCard(action, index) {
   `;
 }
 
+function accountLaneCard(action) {
+  const title = action.category === "Approval"
+    ? String(action.title || "").replace(/^Review draft approval:\s*/i, "") || "Draft approval"
+    : assistantTitle(action);
+  const detail = action.entity || action.detail || action.next_step || "";
+  return `
+    <article class="account-lane-card ${escapeHtml(action.severity || "warn")}">
+      <header>
+        <strong>${safeText(title, 110)}</strong>
+        ${statusPill(action.severity || "warn", assistantLabel(action))}
+      </header>
+      <p>${safeText(detail, 140)}</p>
+      <small>${safeText(action.next_step || assistantReason(action), 150)}</small>
+      ${actionButtons(action)}
+    </article>
+  `;
+}
+
 function renderSalesAssistant(data) {
   const center = data.action_center || {};
   const summary = center.summary || {};
@@ -320,6 +338,7 @@ function renderSalesAssistant(data) {
   ].slice(0, 3);
 
   const doNow = [...inbound, ...approvals, ...research].slice(0, 5);
+  const todaysAccounts = [...inbound, ...approvals, ...research, ...rankedActions(actions, ["CRM Sync", "Integration"])].slice(0, 6);
   const blockedCount = blockers.length + (monday.blocked ? 1 : 0);
   const headline = summary.inbound_waiting
     ? `${number(summary.inbound_waiting)} conversations need attention`
@@ -346,19 +365,28 @@ function renderSalesAssistant(data) {
         <span class="${blockedCount ? "hot" : ""}"><b>${number(blockedCount)}</b>Blockers</span>
       </div>
     </div>
-    <div class="command-center-grid">
-      <section class="assistant-panel primary">
+    <div class="operator-lanes">
+      <section class="assistant-panel primary operator-lane">
         <div class="section-head">
-          <h2>Do These First</h2>
+          <h2>Needs You</h2>
           <span class="quiet">${number(doNow.length)} sales action(s)</span>
         </div>
         <div class="assistant-task-list">
           ${doNow.map((action, index) => assistantCard(action, index)).join("") || '<div class="empty">No sales actions are waiting right now.</div>'}
         </div>
       </section>
-      <section class="assistant-panel">
+      <section class="assistant-panel operator-lane">
         <div class="section-head">
-          <h2>Assistant Autopilot</h2>
+          <h2>Today's Accounts</h2>
+          <span class="quiet">context before tasks</span>
+        </div>
+        <div class="account-lane-list">
+          ${todaysAccounts.map(accountLaneCard).join("") || '<div class="empty">No active accounts for today.</div>'}
+        </div>
+      </section>
+      <section class="assistant-panel operator-lane">
+        <div class="section-head">
+          <h2>Parked / System Handling</h2>
         </div>
         <div class="assistant-note-list">
           <article><b>Inbox tracking</b><span>Watching Gmail and reminding you until you reply.</span></article>

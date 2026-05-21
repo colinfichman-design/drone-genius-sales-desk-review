@@ -327,6 +327,17 @@ main {
   grid-template-columns: minmax(0, 1.18fr) minmax(360px, 0.82fr);
 }
 
+.operator-lanes {
+  align-items: start;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: minmax(380px, 1.12fr) minmax(280px, 0.78fr) minmax(320px, 0.86fr);
+}
+
+.operator-lane {
+  min-height: 100%;
+}
+
 .assistant-panel {
   padding: 16px;
 }
@@ -336,7 +347,8 @@ main {
 }
 
 .assistant-task-list,
-.assistant-note-list {
+.assistant-note-list,
+.account-lane-list {
   display: grid;
   gap: 10px;
 }
@@ -420,6 +432,58 @@ main {
 .assistant-note-list span {
   color: #3b4244;
   font-size: 13px;
+}
+
+.account-lane-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--green);
+  border-radius: 8px;
+  display: grid;
+  gap: 8px;
+  padding: 11px;
+}
+
+.account-lane-card.warn {
+  border-left-color: var(--amber);
+}
+
+.account-lane-card.danger {
+  border-left-color: var(--red);
+}
+
+.account-lane-card.paused,
+.account-lane-card.unknown {
+  border-left-color: var(--blue);
+}
+
+.account-lane-card header {
+  align-items: flex-start;
+  display: flex;
+  gap: 9px;
+  justify-content: space-between;
+}
+
+.account-lane-card strong {
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+.account-lane-card p,
+.account-lane-card small {
+  color: #3b4244;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.account-lane-card .action-buttons {
+  gap: 6px;
+}
+
+.account-lane-card .small-action,
+.account-lane-card .small-link {
+  min-height: 28px;
+  padding: 5px 8px;
 }
 
 .overview,
@@ -1284,6 +1348,7 @@ pre {
   .operator-hero,
   .assistant-grid,
   .command-center-grid,
+  .operator-lanes,
   .action-layout,
   .office-command-grid,
   .account-summary-grid,
@@ -1334,6 +1399,7 @@ pre {
   .action-layout,
   .assistant-grid,
   .command-center-grid,
+  .operator-lanes,
   .office-command-grid,
   .subagent-grid,
   .office-grid,
