@@ -449,6 +449,9 @@ function renderSalesAssistant(data) {
         <span class="${blockedCount ? "hot" : ""}"><b>${number(blockedCount)}</b>Blockers</span>
       </div>
     </div>
+  `;
+
+  $("#operatorLanes").innerHTML = `
     <div class="operator-lanes">
       <section class="assistant-panel primary operator-lane">
         <div class="section-head">
@@ -493,6 +496,56 @@ function renderSalesAssistant(data) {
   `;
 }
 
+function initials(value) {
+  const words = String(value || "AI")
+    .replace(/[^A-Za-z0-9 ]+/g, " ")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+  if (!words.length) return "AI";
+  return words.slice(0, 2).map((word) => word[0]).join("").toUpperCase();
+}
+
+function roomAccent(roomName = "") {
+  const name = roomName.toLowerCase();
+  if (name.includes("inbox")) return "inbox";
+  if (name.includes("radar")) return "radar";
+  if (name.includes("outreach")) return "outreach";
+  if (name.includes("crm")) return "crm";
+  if (name.includes("health")) return "health";
+  if (name.includes("multichannel")) return "multichannel";
+  return "command";
+}
+
+function agentBadge(system) {
+  const label = system.label || system.name || "AI Agent";
+  const status = system.status || (system.active ? "ok" : "paused");
+  const detail = system.schedule || (system.last_log_at ? `last ${formatDate(system.last_log_at)}` : "manual");
+  return `
+    <article class="office-agent ${escapeHtml(status)}">
+      <span class="agent-avatar">${escapeHtml(initials(label))}</span>
+      <div>
+        <strong>${safeText(label, 70)}</strong>
+        <small>${safeText(detail, 90)}</small>
+      </div>
+    </article>
+  `;
+}
+
+function deterministicAgentBadge(agent) {
+  const label = agent.label || agent.name || "Agent";
+  return `
+    <article class="agent-roster-card ${escapeHtml(agent.status || "unknown")}">
+      <span class="agent-avatar">${escapeHtml(initials(label))}</span>
+      <div>
+        <strong>${safeText(label, 72)}</strong>
+        <small>${safeText(agent.name, 70)} / ${agent.log ? `${formatAge(agent.log.age_hours)} log` : "no log"}</small>
+      </div>
+      ${statusPill(agent.status, statusLabel(agent.status))}
+    </article>
+  `;
+}
+
 function renderOfficeBrief(data) {
   const agents = data.agents || {};
   const office = data.virtual_office || {};
@@ -504,76 +557,92 @@ function renderOfficeBrief(data) {
   const heartbeats = events.heartbeats || [];
   const activeRooms = rooms.filter((room) => room.status === "ok").length;
   const issueRooms = rooms.length - activeRooms;
+  const activeAgents = deterministic.filter((agent) => agent.status === "ok").length;
+  const roster = deterministic.slice(0, 8);
 
   $("#officeBrief").innerHTML = `
     <div class="section-head">
       <div>
-        <h2>Virtual Office</h2>
-        <span class="quiet">${number(rooms.length)} rooms / ${number(deterministic.length)} deterministic agents / ${number(subagents.length)} subagent personas</span>
+        <h2>AI Agent Virtual Office</h2>
+        <span class="quiet">${number(activeAgents)} active agents / ${number(rooms.length)} rooms / ${number(subagents.length)} subagent personas</span>
       </div>
       ${statusPill(issueRooms ? "warn" : "ok", issueRooms ? `${number(issueRooms)} room(s) need attention` : "Office active")}
     </div>
-    <div class="office-command-grid">
-      <section class="office-map">
-        <h3>Rooms</h3>
-        <div class="office-room-rail">
+    <div class="virtual-office-shell">
+      <section class="office-floor">
+        <header class="office-floor-head">
+          <div>
+            <span class="metric-title">Office Floor</span>
+            <strong>Revenue agents at work</strong>
+          </div>
+          <span>${number(events.event_count || 0)} events</span>
+        </header>
+        <div class="office-room-board">
           ${rooms
-            .slice(0, 6)
             .map(
               (room) => `
-                <article class="office-room-mini ${escapeHtml(room.status || "unknown")}">
+                <article class="office-suite ${escapeHtml(room.status || "unknown")} ${escapeHtml(roomAccent(room.room))}">
                   <header>
-                    <strong>${safeText(room.room, 80)}</strong>
-                    ${statusPill(room.status, statusLabel(room.status))}
+                    <div>
+                      <span class="office-room-code">${escapeHtml(initials(room.room))}</span>
+                      <strong>${safeText(room.room, 80)}</strong>
+                    </div>
+                    <span class="office-live-light ${escapeHtml(room.status || "unknown")}"></span>
                   </header>
                   <p>${safeText(room.purpose, 150)}</p>
-                  <small>${safeText(room.next_action, 180)}</small>
+                  <div class="office-agent-stack">
+                    ${(room.systems_detail || []).slice(0, 3).map(agentBadge).join("") || '<span class="quiet">Manual desk</span>'}
+                  </div>
+                  <footer>
+                    ${(room.metrics || []).slice(0, 2).map((m) => `<span><b>${safeText(m.value, 30)}</b>${safeText(m.label, 60)}</span>`).join("")}
+                  </footer>
                 </article>
               `,
             )
             .join("") || '<div class="empty">No virtual office rooms found.</div>'}
         </div>
       </section>
-      <section class="office-map">
-        <h3>What Each Team Is Doing</h3>
-        <div class="workstream-stack">
-          ${workstreams
-            .slice(0, 7)
-            .map(
-              (stream) => `
-                <article class="workstream-row">
-                  ${statusPill(stream.status, statusLabel(stream.status))}
-                  <div>
-                    <strong>${safeText(stream.name, 90)}</strong>
-                    <small>${safeText(stream.handoff, 180)}</small>
-                  </div>
-                </article>
-              `,
-            )
-            .join("") || '<div class="empty">No workstreams found.</div>'}
+      <section class="office-roster-panel">
+        <div class="office-roster-block">
+          <h3>Agent Roster</h3>
+          <div class="agent-roster-list">
+            ${roster.map(deterministicAgentBadge).join("") || '<div class="empty">No deterministic agents found.</div>'}
+          </div>
         </div>
-      </section>
-      <section class="office-map">
-        <h3>Recent Heartbeats</h3>
-        <div class="heartbeat-list">
-          ${heartbeats
-            .slice(0, 5)
-            .map(
-              (beat) => `
-                <article>
-                  <div>${statusPill(beat.status, beat.agent || statusLabel(beat.status))}<span>${formatDate(beat.at)}</span></div>
-                  <p>${safeText(beat.detail || beat.last_event, 150)}</p>
-                </article>
-              `,
-            )
-            .join("") || '<div class="empty">No local agent heartbeats yet.</div>'}
+        <div class="office-roster-block">
+          <h3>Current Handoffs</h3>
+          <div class="workstream-stack">
+            ${workstreams
+              .slice(0, 5)
+              .map(
+                (stream) => `
+                  <article class="workstream-row">
+                    ${statusPill(stream.status, statusLabel(stream.status))}
+                    <div>
+                      <strong>${safeText(stream.name, 90)}</strong>
+                      <small>${safeText(stream.handoff, 180)}</small>
+                    </div>
+                  </article>
+                `,
+              )
+              .join("") || '<div class="empty">No workstreams found.</div>'}
+          </div>
         </div>
-        <h3>Gaps</h3>
-        <div class="gap-list compact">
-          ${(office.gaps || [])
-            .slice(0, 2)
-            .map((gap) => `<article class="gap"><span></span><p>${safeText(gap, 220)}</p></article>`)
-            .join("") || '<div class="empty">No office gaps recorded.</div>'}
+        <div class="office-roster-block">
+          <h3>Live Heartbeats</h3>
+          <div class="heartbeat-list">
+            ${heartbeats
+              .slice(0, 4)
+              .map(
+                (beat) => `
+                  <article>
+                    <div>${statusPill(beat.status, beat.agent || statusLabel(beat.status))}<span>${formatDate(beat.at)}</span></div>
+                    <p>${safeText(beat.detail || beat.last_event, 150)}</p>
+                  </article>
+                `,
+              )
+              .join("") || '<div class="empty">No local agent heartbeats yet.</div>'}
+          </div>
         </div>
       </section>
     </div>

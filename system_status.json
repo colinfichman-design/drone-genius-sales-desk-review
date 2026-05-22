@@ -63,7 +63,7 @@
         "title": "Review sample revenue action"
       }
     ],
-    "generated_at": "2026-05-21T23:34:00.554253+00:00",
+    "generated_at": "2026-05-22T01:18:00.266858+00:00",
     "summary": {
       "inbound_waiting": 3,
       "multichannel_ready": 47,
@@ -76,7 +76,7 @@
     "top_actions": [
       {
         "action_id": "redacted",
-        "age_hours": 10.06,
+        "age_hours": 11.79,
         "category": "CRM Sync",
         "command": "disabled in public review",
         "detail": "Sample sanitized operational detail for public design review.",
@@ -97,7 +97,7 @@
       },
       {
         "action_id": "redacted",
-        "age_hours": 360.34,
+        "age_hours": 362.08,
         "category": "Approval",
         "command": "disabled in public review",
         "detail": "Sample sanitized operational detail for public design review.",
@@ -115,7 +115,7 @@
       },
       {
         "action_id": "redacted",
-        "age_hours": 25.87,
+        "age_hours": 27.6,
         "category": "Inbound",
         "command": "disabled in public review",
         "detail": "Sample sanitized operational detail for public design review.",
@@ -131,14 +131,14 @@
         "reply_draft_id": "redacted",
         "reply_draft_message_id": "redacted",
         "reply_draft_url": "redacted",
-        "score": 95.08,
+        "score": 95.15,
         "severity": "warn",
         "source": "Sample Source",
         "title": "Review sample revenue action"
       },
       {
         "action_id": "redacted",
-        "age_hours": 1.42,
+        "age_hours": 3.16,
         "category": "Inbound",
         "command": "disabled in public review",
         "detail": "Sample sanitized operational detail for public design review.",
@@ -154,14 +154,14 @@
         "reply_draft_id": "redacted",
         "reply_draft_message_id": "redacted",
         "reply_draft_url": "redacted",
-        "score": 94.06,
+        "score": 94.13,
         "severity": "warn",
         "source": "Sample Source",
         "title": "Review sample revenue action"
       },
       {
         "action_id": "redacted",
-        "age_hours": 0.61,
+        "age_hours": 2.35,
         "category": "Inbound",
         "command": "disabled in public review",
         "detail": "Sample sanitized operational detail for public design review.",
@@ -177,7 +177,7 @@
         "reply_draft_id": "redacted",
         "reply_draft_message_id": "redacted",
         "reply_draft_url": "redacted",
-        "score": 94.03,
+        "score": 94.1,
         "severity": "warn",
         "source": "Sample Source",
         "title": "Review sample revenue action"
@@ -202,7 +202,7 @@
       },
       {
         "action_id": "redacted",
-        "age_hours": 1.31,
+        "age_hours": 11.79,
         "category": "CRM Sync",
         "command": "disabled in public review",
         "detail": "Sample sanitized operational detail for public design review.",
@@ -223,7 +223,7 @@
       },
       {
         "action_id": "redacted",
-        "age_hours": 10.06,
+        "age_hours": 11.79,
         "category": "CRM Sync",
         "command": "disabled in public review",
         "detail": "Sample sanitized operational detail for public design review.",
@@ -316,7 +316,7 @@
       },
       {
         "action_id": "redacted",
-        "age_hours": 387.26,
+        "age_hours": 388.99,
         "category": "Approval",
         "command": "disabled in public review",
         "detail": "Sample sanitized operational detail for public design review.",
@@ -334,7 +334,7 @@
       },
       {
         "action_id": "redacted",
-        "age_hours": 387.26,
+        "age_hours": 388.99,
         "category": "Approval",
         "command": "disabled in public review",
         "detail": "Sample sanitized operational detail for public design review.",
@@ -352,7 +352,7 @@
       },
       {
         "action_id": "redacted",
-        "age_hours": 187.67,
+        "age_hours": 189.41,
         "category": "Radar",
         "command": "disabled in public review",
         "detail": "Sample sanitized operational detail for public design review.",
@@ -370,7 +370,7 @@
       },
       {
         "action_id": "redacted",
-        "age_hours": 187.7,
+        "age_hours": 189.43,
         "category": "Radar",
         "command": "disabled in public review",
         "detail": "Sample sanitized operational detail for public design review.",
@@ -396,7 +396,7 @@
       {
         "category": "Inbound",
         "deployed_file": {
-          "age_hours": 78.35,
+          "age_hours": 80.08,
           "exists": true,
           "modified_at": "2026-05-18T17:13:06.497765+00:00",
           "path": "/public-review/redacted",
@@ -410,14 +410,14 @@
           "status": "missing"
         },
         "log": {
-          "age_hours": 0.06,
+          "age_hours": 0.05,
           "exists": true,
           "last_rc": 0,
-          "last_started_at": null,
-          "modified_at": "2026-05-21T23:30:07.339417+00:00",
+          "last_started_at": "2026-05-21T21:15:00",
+          "modified_at": "2026-05-22T01:15:03.406587+00:00",
           "name": "Example Account",
           "path": "/public-review/redacted",
-          "size_bytes": 2296566,
+          "size_bytes": 2305779,
           "status": "ok",
           "tail": [
             "redacted",
@@ -436,7 +436,7 @@
       {
         "category": "Approvals",
         "deployed_file": {
-          "age_hours": 239.63,
+          "age_hours": 241.36,
           "exists": true,
           "modified_at": "2026-05-11T23:56:19.179608+00:00",
           "path": "/public-review/redacted",
@@ -453,11 +453,11 @@
           "age_hours": 0.0,
           "exists": true,
           "last_rc": 0,
-          "last_started_at": "2026-05-21T19:34:00",
-          "modified_at": "2026-05-21T23:34:00.412796+00:00",
+          "last_started_at": "2026-05-21T21:18:00",
+          "modified_at": "2026-05-22T01:18:00.141309+00:00",
           "name": "Example Account",
           "path": "/public-review/redacted",
-          "size_bytes": 2287698,
+          "size_bytes": 2306340,
           "status": "ok",
           "tail": [
             "redacted",
@@ -476,7 +476,7 @@
       {
         "category": "Inbound",
         "deployed_file": {
-          "age_hours": 50.82,
+          "age_hours": 52.56,
           "exists": true,
           "modified_at": "2026-05-19T20:44:41.801503+00:00",
           "path": "/public-review/redacted",
@@ -490,7 +490,7 @@
           "status": "missing"
         },
         "log": {
-          "age_hours": 11.56,
+          "age_hours": 13.29,
           "exists": true,
           "last_rc": 0,
           "last_started_at": "2026-05-21T08:00:00",
@@ -516,7 +516,7 @@
       {
         "category": "Email health",
         "deployed_file": {
-          "age_hours": 243.76,
+          "age_hours": 245.5,
           "exists": true,
           "modified_at": "2026-05-11T19:48:14.763036+00:00",
           "path": "/public-review/redacted",
@@ -530,7 +530,7 @@
           "status": "missing"
         },
         "log": {
-          "age_hours": 5.57,
+          "age_hours": 7.3,
           "exists": true,
           "last_rc": 0,
           "last_started_at": "2026-05-21T14:00:00",
@@ -556,7 +556,7 @@
       {
         "category": "Enrichment",
         "deployed_file": {
-          "age_hours": 194.12,
+          "age_hours": 195.85,
           "exists": true,
           "modified_at": "2026-05-13T21:27:00.055084+00:00",
           "path": "/public-review/redacted",
@@ -570,7 +570,7 @@
           "status": "missing"
         },
         "log": {
-          "age_hours": 13.56,
+          "age_hours": 15.3,
           "exists": true,
           "last_rc": 0,
           "last_started_at": null,
@@ -596,7 +596,7 @@
       {
         "category": "CRM",
         "deployed_file": {
-          "age_hours": 195.42,
+          "age_hours": 197.16,
           "exists": true,
           "modified_at": "2026-05-13T20:08:30.754742+00:00",
           "path": "/public-review/redacted",
@@ -610,7 +610,7 @@
           "status": "missing"
         },
         "log": {
-          "age_hours": 8.07,
+          "age_hours": 9.8,
           "exists": true,
           "last_rc": 0,
           "last_started_at": null,
@@ -636,7 +636,7 @@
       {
         "category": "Health",
         "deployed_file": {
-          "age_hours": 243.76,
+          "age_hours": 245.5,
           "exists": true,
           "modified_at": "2026-05-11T19:48:14.775532+00:00",
           "path": "/public-review/redacted",
@@ -650,7 +650,7 @@
           "status": "missing"
         },
         "log": {
-          "age_hours": 3.57,
+          "age_hours": 5.3,
           "exists": true,
           "last_rc": 0,
           "last_started_at": "2026-05-21T16:00:00",
@@ -676,7 +676,7 @@
       {
         "category": "Inbound",
         "deployed_file": {
-          "age_hours": 4.65,
+          "age_hours": 6.39,
           "exists": true,
           "modified_at": "2026-05-21T18:54:43.829106+00:00",
           "path": "/public-review/redacted",
@@ -690,14 +690,14 @@
           "status": "missing"
         },
         "log": {
-          "age_hours": 0.06,
+          "age_hours": 0.04,
           "exists": true,
           "last_rc": 0,
           "last_started_at": null,
-          "modified_at": "2026-05-21T23:30:36.730248+00:00",
+          "modified_at": "2026-05-22T01:15:50.407458+00:00",
           "name": "Example Account",
           "path": "/public-review/redacted",
-          "size_bytes": 1100983,
+          "size_bytes": 1110854,
           "status": "ok",
           "tail": [
             "redacted",
@@ -716,7 +716,7 @@
       {
         "category": "Discovery",
         "deployed_file": {
-          "age_hours": 74.14,
+          "age_hours": 75.87,
           "exists": true,
           "modified_at": "2026-05-18T21:25:42.973338+00:00",
           "path": "/public-review/redacted",
@@ -730,7 +730,7 @@
           "status": "missing"
         },
         "log": {
-          "age_hours": 12.96,
+          "age_hours": 14.69,
           "exists": true,
           "last_rc": null,
           "last_started_at": null,
@@ -756,7 +756,7 @@
       {
         "category": "Discovery",
         "deployed_file": {
-          "age_hours": 139.96,
+          "age_hours": 141.69,
           "exists": true,
           "modified_at": "2026-05-16T03:36:38.277361+00:00",
           "path": "/public-review/redacted",
@@ -770,7 +770,7 @@
           "status": "missing"
         },
         "log": {
-          "age_hours": 13.23,
+          "age_hours": 14.96,
           "exists": true,
           "last_rc": 0,
           "last_started_at": null,
@@ -796,7 +796,7 @@
       {
         "category": "Outbound",
         "deployed_file": {
-          "age_hours": 239.77,
+          "age_hours": 241.5,
           "exists": true,
           "modified_at": "2026-05-11T23:47:44.329673+00:00",
           "path": "/public-review/redacted",
@@ -810,7 +810,7 @@
           "status": "missing"
         },
         "log": {
-          "age_hours": 11.48,
+          "age_hours": 13.22,
           "exists": true,
           "last_rc": 0,
           "last_started_at": null,
@@ -836,7 +836,7 @@
       {
         "category": "Outbound",
         "deployed_file": {
-          "age_hours": 239.77,
+          "age_hours": 241.5,
           "exists": true,
           "modified_at": "2026-05-11T23:47:44.328506+00:00",
           "path": "/public-review/redacted",
@@ -850,14 +850,14 @@
           "status": "missing"
         },
         "log": {
-          "age_hours": 0.07,
+          "age_hours": 0.3,
           "exists": true,
           "last_rc": 0,
-          "last_started_at": "2026-05-21T19:30:00",
-          "modified_at": "2026-05-21T23:30:01.533378+00:00",
+          "last_started_at": "2026-05-21T21:00:00",
+          "modified_at": "2026-05-22T01:00:02.124045+00:00",
           "name": "Example Account",
           "path": "/public-review/redacted",
-          "size_bytes": 68845,
+          "size_bytes": 69775,
           "status": "ok",
           "tail": [
             "redacted",
@@ -876,7 +876,7 @@
       {
         "category": "Handoff",
         "deployed_file": {
-          "age_hours": 195.42,
+          "age_hours": 197.16,
           "exists": true,
           "modified_at": "2026-05-13T20:08:30.755542+00:00",
           "path": "/public-review/redacted",
@@ -890,7 +890,7 @@
           "status": "missing"
         },
         "log": {
-          "age_hours": 11.31,
+          "age_hours": 13.05,
           "exists": true,
           "last_rc": 0,
           "last_started_at": null,
@@ -916,7 +916,7 @@
       {
         "category": "Health",
         "deployed_file": {
-          "age_hours": 74.14,
+          "age_hours": 75.87,
           "exists": true,
           "modified_at": "2026-05-18T21:25:42.973748+00:00",
           "path": "/public-review/redacted",
@@ -933,11 +933,11 @@
           "age_hours": 0.0,
           "exists": true,
           "last_rc": 0,
-          "last_started_at": "2026-05-21T19:34:00",
-          "modified_at": "2026-05-21T23:34:00.412785+00:00",
+          "last_started_at": "2026-05-21T21:18:00",
+          "modified_at": "2026-05-22T01:18:00.136348+00:00",
           "name": "Example Account",
           "path": "/public-review/redacted",
-          "size_bytes": 736449,
+          "size_bytes": 745965,
           "status": "ok",
           "tail": [
             "redacted",
@@ -956,7 +956,7 @@
       {
         "category": "Outbound",
         "deployed_file": {
-          "age_hours": 243.76,
+          "age_hours": 245.5,
           "exists": true,
           "modified_at": "2026-05-11T19:48:14.767504+00:00",
           "path": "/public-review/redacted",
@@ -976,7 +976,7 @@
       {
         "category": "Outbound",
         "deployed_file": {
-          "age_hours": 195.62,
+          "age_hours": 197.35,
           "exists": true,
           "modified_at": "2026-05-13T19:56:46.901168+00:00",
           "path": "/public-review/redacted",
@@ -990,7 +990,7 @@
           "status": "missing"
         },
         "log": {
-          "age_hours": 675.14,
+          "age_hours": 676.87,
           "exists": true,
           "last_rc": 0,
           "last_started_at": "2026-04-23T16:25:45",
@@ -1011,7 +1011,7 @@
       {
         "category": "Outbound",
         "deployed_file": {
-          "age_hours": 75.03,
+          "age_hours": 76.77,
           "exists": true,
           "modified_at": "2026-05-18T20:31:58.954288+00:00",
           "path": "/public-review/redacted",
@@ -1025,7 +1025,7 @@
           "status": "missing"
         },
         "log": {
-          "age_hours": 675.14,
+          "age_hours": 676.88,
           "exists": true,
           "last_rc": 0,
           "last_started_at": "2026-04-23T16:25:26",
@@ -1054,16 +1054,16 @@
       "heartbeat_count": 6,
       "heartbeats": [
         {
-          "age_hours": 0.07,
+          "age_hours": 0.3,
           "agent": "openphone_poller",
-          "at": "2026-05-21T23:30:01.505460+00:00",
+          "at": "2026-05-22T01:00:02.096789+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
           "last_event": "phone_poll",
           "room": "Multichannel Desk",
           "status": "ok"
         },
         {
-          "age_hours": 11.48,
+          "age_hours": 13.22,
           "agent": "multichannel_engine",
           "at": "2026-05-21T12:05:00.792601+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1072,7 +1072,7 @@
           "status": "ok"
         },
         {
-          "age_hours": 13.23,
+          "age_hours": 14.96,
           "agent": "permit_radar",
           "at": "2026-05-21T10:20:11.558877+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1081,7 +1081,7 @@
           "status": "ok"
         },
         {
-          "age_hours": 84.96,
+          "age_hours": 86.69,
           "agent": "project_radar",
           "at": "2026-05-18T10:36:26.427260+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1090,7 +1090,7 @@
           "status": "ok"
         },
         {
-          "age_hours": 240.52,
+          "age_hours": 242.25,
           "agent": "codex",
           "at": "2026-05-11T23:02:46.677622+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1099,7 +1099,7 @@
           "status": "ok"
         },
         {
-          "age_hours": 240.54,
+          "age_hours": 242.27,
           "agent": "virtual-office",
           "at": "2026-05-11T23:01:48.376935+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1110,7 +1110,37 @@
       ],
       "latest": [
         {
-          "age_hours": 0.07,
+          "age_hours": 0.3,
+          "agent": "openphone_poller",
+          "at": "2026-05-22T01:00:02.096789+00:00",
+          "detail": "Sample sanitized operational detail for public design review.",
+          "event": "phone_poll",
+          "link": "",
+          "room": "Multichannel Desk",
+          "status": "ok"
+        },
+        {
+          "age_hours": 0.8,
+          "agent": "openphone_poller",
+          "at": "2026-05-22T00:30:01.951617+00:00",
+          "detail": "Sample sanitized operational detail for public design review.",
+          "event": "phone_poll",
+          "link": "",
+          "room": "Multichannel Desk",
+          "status": "ok"
+        },
+        {
+          "age_hours": 1.3,
+          "agent": "openphone_poller",
+          "at": "2026-05-22T00:00:01.358153+00:00",
+          "detail": "Sample sanitized operational detail for public design review.",
+          "event": "phone_poll",
+          "link": "",
+          "room": "Multichannel Desk",
+          "status": "ok"
+        },
+        {
+          "age_hours": 1.8,
           "agent": "openphone_poller",
           "at": "2026-05-21T23:30:01.505460+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1120,7 +1150,7 @@
           "status": "ok"
         },
         {
-          "age_hours": 0.57,
+          "age_hours": 2.3,
           "agent": "openphone_poller",
           "at": "2026-05-21T23:00:01.157985+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1130,7 +1160,7 @@
           "status": "ok"
         },
         {
-          "age_hours": 1.07,
+          "age_hours": 2.8,
           "agent": "openphone_poller",
           "at": "2026-05-21T22:30:01.231134+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1140,7 +1170,7 @@
           "status": "ok"
         },
         {
-          "age_hours": 1.57,
+          "age_hours": 3.3,
           "agent": "openphone_poller",
           "at": "2026-05-21T22:00:02.270900+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1150,7 +1180,7 @@
           "status": "ok"
         },
         {
-          "age_hours": 2.07,
+          "age_hours": 3.8,
           "agent": "openphone_poller",
           "at": "2026-05-21T21:30:02.432869+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1160,7 +1190,7 @@
           "status": "ok"
         },
         {
-          "age_hours": 2.57,
+          "age_hours": 4.3,
           "agent": "openphone_poller",
           "at": "2026-05-21T21:00:03.115153+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1170,7 +1200,7 @@
           "status": "ok"
         },
         {
-          "age_hours": 3.07,
+          "age_hours": 4.8,
           "agent": "openphone_poller",
           "at": "2026-05-21T20:30:02.017384+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1180,7 +1210,7 @@
           "status": "ok"
         },
         {
-          "age_hours": 3.57,
+          "age_hours": 5.3,
           "agent": "openphone_poller",
           "at": "2026-05-21T20:00:02.148569+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1190,7 +1220,7 @@
           "status": "ok"
         },
         {
-          "age_hours": 4.07,
+          "age_hours": 5.8,
           "agent": "openphone_poller",
           "at": "2026-05-21T19:30:02.290792+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1200,7 +1230,7 @@
           "status": "ok"
         },
         {
-          "age_hours": 4.57,
+          "age_hours": 6.3,
           "agent": "openphone_poller",
           "at": "2026-05-21T19:00:02.160837+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1210,7 +1240,7 @@
           "status": "ok"
         },
         {
-          "age_hours": 5.07,
+          "age_hours": 6.8,
           "agent": "openphone_poller",
           "at": "2026-05-21T18:30:01.354511+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1220,7 +1250,7 @@
           "status": "ok"
         },
         {
-          "age_hours": 5.57,
+          "age_hours": 7.3,
           "agent": "openphone_poller",
           "at": "2026-05-21T18:00:02.288066+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1230,7 +1260,7 @@
           "status": "ok"
         },
         {
-          "age_hours": 6.07,
+          "age_hours": 7.8,
           "agent": "openphone_poller",
           "at": "2026-05-21T17:30:01.692041+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1240,7 +1270,7 @@
           "status": "ok"
         },
         {
-          "age_hours": 6.57,
+          "age_hours": 8.3,
           "agent": "openphone_poller",
           "at": "2026-05-21T17:00:01.682555+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1250,7 +1280,7 @@
           "status": "ok"
         },
         {
-          "age_hours": 7.07,
+          "age_hours": 8.8,
           "agent": "openphone_poller",
           "at": "2026-05-21T16:30:01.200858+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1260,7 +1290,7 @@
           "status": "ok"
         },
         {
-          "age_hours": 7.57,
+          "age_hours": 9.3,
           "agent": "openphone_poller",
           "at": "2026-05-21T16:00:01.611389+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
@@ -1270,39 +1300,9 @@
           "status": "ok"
         },
         {
-          "age_hours": 8.07,
+          "age_hours": 9.8,
           "agent": "openphone_poller",
           "at": "2026-05-21T15:30:01.911592+00:00",
-          "detail": "Sample sanitized operational detail for public design review.",
-          "event": "phone_poll",
-          "link": "",
-          "room": "Multichannel Desk",
-          "status": "ok"
-        },
-        {
-          "age_hours": 8.57,
-          "agent": "openphone_poller",
-          "at": "2026-05-21T15:00:01.539876+00:00",
-          "detail": "Sample sanitized operational detail for public design review.",
-          "event": "phone_poll",
-          "link": "",
-          "room": "Multichannel Desk",
-          "status": "ok"
-        },
-        {
-          "age_hours": 9.07,
-          "agent": "openphone_poller",
-          "at": "2026-05-21T14:30:01.136311+00:00",
-          "detail": "Sample sanitized operational detail for public design review.",
-          "event": "phone_poll",
-          "link": "",
-          "room": "Multichannel Desk",
-          "status": "ok"
-        },
-        {
-          "age_hours": 9.57,
-          "agent": "openphone_poller",
-          "at": "2026-05-21T14:00:01.688194+00:00",
           "detail": "Sample sanitized operational detail for public design review.",
           "event": "phone_poll",
           "link": "",
@@ -1311,17 +1311,17 @@
         }
       ],
       "meta": {
-        "age_hours": 0.07,
+        "age_hours": 0.3,
         "exists": true,
         "load_status": "ok",
-        "modified_at": "2026-05-21T23:30:01.508161+00:00",
+        "modified_at": "2026-05-22T01:00:02.100314+00:00",
         "path": "/public-review/redacted",
-        "size_bytes": 66045,
+        "size_bytes": 66049,
         "status": "ok"
       }
     },
     "openclaw": {
-      "age_hours": 188.12,
+      "age_hours": 189.85,
       "exists": true,
       "modified_at": "2026-05-14T03:26:58.037648+00:00",
       "path": "/public-review/redacted",
@@ -1333,7 +1333,7 @@
       {
         "files": {
           "AGENTS.md": {
-            "age_hours": 243.47,
+            "age_hours": 245.2,
             "exists": true,
             "modified_at": "2026-05-11T20:06:03.897330+00:00",
             "path": "/public-review/redacted",
@@ -1341,7 +1341,7 @@
             "status": "ok"
           },
           "BOOTSTRAP.md": {
-            "age_hours": 243.47,
+            "age_hours": 245.2,
             "exists": true,
             "modified_at": "2026-05-11T20:06:03.896126+00:00",
             "path": "/public-review/redacted",
@@ -1349,7 +1349,7 @@
             "status": "ok"
           },
           "HEARTBEAT.md": {
-            "age_hours": 243.47,
+            "age_hours": 245.2,
             "exists": true,
             "modified_at": "2026-05-11T20:06:03.895569+00:00",
             "path": "/public-review/redacted",
@@ -1357,7 +1357,7 @@
             "status": "ok"
           },
           "IDENTITY.md": {
-            "age_hours": 243.47,
+            "age_hours": 245.2,
             "exists": true,
             "modified_at": "2026-05-11T20:06:03.895325+00:00",
             "path": "/public-review/redacted",
@@ -1365,7 +1365,7 @@
             "status": "ok"
           },
           "SOUL.md": {
-            "age_hours": 243.47,
+            "age_hours": 245.2,
             "exists": true,
             "modified_at": "2026-05-11T20:06:03.896857+00:00",
             "path": "/public-review/redacted",
@@ -1373,7 +1373,7 @@
             "status": "ok"
           },
           "TOOLS.md": {
-            "age_hours": 243.47,
+            "age_hours": 245.2,
             "exists": true,
             "modified_at": "2026-05-11T20:06:03.897556+00:00",
             "path": "/public-review/redacted",
@@ -1381,7 +1381,7 @@
             "status": "ok"
           },
           "USER.md": {
-            "age_hours": 243.47,
+            "age_hours": 245.2,
             "exists": true,
             "modified_at": "2026-05-11T20:06:03.896587+00:00",
             "path": "/public-review/redacted",
@@ -1400,7 +1400,7 @@
       {
         "files": {
           "AGENTS.md": {
-            "age_hours": 243.47,
+            "age_hours": 245.2,
             "exists": true,
             "modified_at": "2026-05-11T20:06:03.899376+00:00",
             "path": "/public-review/redacted",
@@ -1408,7 +1408,7 @@
             "status": "ok"
           },
           "BOOTSTRAP.md": {
-            "age_hours": 243.47,
+            "age_hours": 245.2,
             "exists": true,
             "modified_at": "2026-05-11T20:06:03.898383+00:00",
             "path": "/public-review/redacted",
@@ -1416,7 +1416,7 @@
             "status": "ok"
           },
           "HEARTBEAT.md": {
-            "age_hours": 243.47,
+            "age_hours": 245.2,
             "exists": true,
             "modified_at": "2026-05-11T20:06:03.898135+00:00",
             "path": "/public-review/redacted",
@@ -1424,7 +1424,7 @@
             "status": "ok"
           },
           "IDENTITY.md": {
-            "age_hours": 243.47,
+            "age_hours": 245.2,
             "exists": true,
             "modified_at": "2026-05-11T20:06:03.897926+00:00",
             "path": "/public-review/redacted",
@@ -1432,7 +1432,7 @@
             "status": "ok"
           },
           "SOUL.md": {
-            "age_hours": 243.47,
+            "age_hours": 245.2,
             "exists": true,
             "modified_at": "2026-05-11T20:06:03.898961+00:00",
             "path": "/public-review/redacted",
@@ -1440,7 +1440,7 @@
             "status": "ok"
           },
           "TOOLS.md": {
-            "age_hours": 243.47,
+            "age_hours": 245.2,
             "exists": true,
             "modified_at": "2026-05-11T20:06:03.899594+00:00",
             "path": "/public-review/redacted",
@@ -1448,7 +1448,7 @@
             "status": "ok"
           },
           "USER.md": {
-            "age_hours": 243.47,
+            "age_hours": 245.2,
             "exists": true,
             "modified_at": "2026-05-11T20:06:03.898685+00:00",
             "path": "/public-review/redacted",
@@ -1467,7 +1467,7 @@
       {
         "files": {
           "AGENTS.md": {
-            "age_hours": 243.47,
+            "age_hours": 245.2,
             "exists": true,
             "modified_at": "2026-05-11T20:06:03.900796+00:00",
             "path": "/public-review/redacted",
@@ -1475,7 +1475,7 @@
             "status": "ok"
           },
           "IDENTITY.md": {
-            "age_hours": 243.47,
+            "age_hours": 245.2,
             "exists": true,
             "modified_at": "2026-05-11T20:06:03.899960+00:00",
             "path": "/public-review/redacted",
@@ -1483,7 +1483,7 @@
             "status": "ok"
           },
           "SOUL.md": {
-            "age_hours": 243.47,
+            "age_hours": 245.2,
             "exists": true,
             "modified_at": "2026-05-11T20:06:03.900462+00:00",
             "path": "/public-review/redacted",
@@ -1491,7 +1491,7 @@
             "status": "ok"
           },
           "TOOLS.md": {
-            "age_hours": 243.47,
+            "age_hours": 245.2,
             "exists": true,
             "modified_at": "2026-05-11T20:06:03.901022+00:00",
             "path": "/public-review/redacted",
@@ -1499,7 +1499,7 @@
             "status": "ok"
           },
           "USER.md": {
-            "age_hours": 243.47,
+            "age_hours": 245.2,
             "exists": true,
             "modified_at": "2026-05-11T20:06:03.900196+00:00",
             "path": "/public-review/redacted",
@@ -1517,9 +1517,9 @@
       }
     ],
     "workspace": {
-      "age_hours": 0.06,
+      "age_hours": 0.04,
       "exists": true,
-      "modified_at": "2026-05-21T23:30:36.615189+00:00",
+      "modified_at": "2026-05-22T01:15:50.279191+00:00",
       "path": "/public-review/redacted",
       "size_bytes": 3072,
       "status": "ok"
@@ -1549,14 +1549,14 @@
         "label": "Gmail reply monitor",
         "line": 6,
         "log": {
-          "age_hours": 0.06,
+          "age_hours": 0.05,
           "exists": true,
           "last_rc": 0,
-          "last_started_at": null,
-          "modified_at": "2026-05-21T23:30:07.339417+00:00",
+          "last_started_at": "2026-05-21T21:15:00",
+          "modified_at": "2026-05-22T01:15:03.406587+00:00",
           "name": "Example Account",
           "path": "/public-review/redacted",
-          "size_bytes": 2296566,
+          "size_bytes": 2305779,
           "status": "ok",
           "tail": [
             "redacted",
@@ -1585,11 +1585,11 @@
           "age_hours": 0.0,
           "exists": true,
           "last_rc": 0,
-          "last_started_at": "2026-05-21T19:34:00",
-          "modified_at": "2026-05-21T23:34:00.412796+00:00",
+          "last_started_at": "2026-05-21T21:18:00",
+          "modified_at": "2026-05-22T01:18:00.141309+00:00",
           "name": "Example Account",
           "path": "/public-review/redacted",
-          "size_bytes": 2287698,
+          "size_bytes": 2306340,
           "status": "ok",
           "tail": [
             "redacted",
@@ -1631,11 +1631,11 @@
           "age_hours": 0.0,
           "exists": true,
           "last_rc": 0,
-          "last_started_at": "2026-05-21T19:34:00",
-          "modified_at": "2026-05-21T23:34:00.412785+00:00",
+          "last_started_at": "2026-05-21T21:18:00",
+          "modified_at": "2026-05-22T01:18:00.136348+00:00",
           "name": "Example Account",
           "path": "/public-review/redacted",
-          "size_bytes": 736449,
+          "size_bytes": 745965,
           "status": "ok",
           "tail": [
             "redacted",
@@ -1661,14 +1661,14 @@
         "label": "Inbound lead tracker",
         "line": 16,
         "log": {
-          "age_hours": 0.06,
+          "age_hours": 0.04,
           "exists": true,
           "last_rc": 0,
           "last_started_at": null,
-          "modified_at": "2026-05-21T23:30:36.730248+00:00",
+          "modified_at": "2026-05-22T01:15:50.407458+00:00",
           "name": "Example Account",
           "path": "/public-review/redacted",
-          "size_bytes": 1100983,
+          "size_bytes": 1110854,
           "status": "ok",
           "tail": [
             "redacted",
@@ -1694,7 +1694,7 @@
         "label": "Stale lead alerter",
         "line": 19,
         "log": {
-          "age_hours": 11.56,
+          "age_hours": 13.29,
           "exists": true,
           "last_rc": 0,
           "last_started_at": "2026-05-21T08:00:00",
@@ -1727,7 +1727,7 @@
         "label": "Revenue digest",
         "line": 22,
         "log": {
-          "age_hours": 11.31,
+          "age_hours": 13.05,
           "exists": true,
           "last_rc": 0,
           "last_started_at": null,
@@ -1760,7 +1760,7 @@
         "label": "Project radar",
         "line": 25,
         "log": {
-          "age_hours": 12.96,
+          "age_hours": 14.69,
           "exists": true,
           "last_rc": null,
           "last_started_at": null,
@@ -1793,7 +1793,7 @@
         "label": "Permit radar",
         "line": 28,
         "log": {
-          "age_hours": 13.23,
+          "age_hours": 14.96,
           "exists": true,
           "last_rc": 0,
           "last_started_at": null,
@@ -1826,7 +1826,7 @@
         "label": "Multichannel engine",
         "line": 31,
         "log": {
-          "age_hours": 11.48,
+          "age_hours": 13.22,
           "exists": true,
           "last_rc": 0,
           "last_started_at": null,
@@ -1859,14 +1859,14 @@
         "label": "OpenPhone poller",
         "line": 34,
         "log": {
-          "age_hours": 0.07,
+          "age_hours": 0.3,
           "exists": true,
           "last_rc": 0,
-          "last_started_at": "2026-05-21T19:30:00",
-          "modified_at": "2026-05-21T23:30:01.533378+00:00",
+          "last_started_at": "2026-05-21T21:00:00",
+          "modified_at": "2026-05-22T01:00:02.124045+00:00",
           "name": "Example Account",
           "path": "/public-review/redacted",
-          "size_bytes": 68845,
+          "size_bytes": 69775,
           "status": "ok",
           "tail": [
             "redacted",
@@ -1958,7 +1958,7 @@
         "label": "Outreach scheduler",
         "line": 42,
         "log": {
-          "age_hours": 675.14,
+          "age_hours": 676.87,
           "exists": true,
           "last_rc": 0,
           "last_started_at": "2026-04-23T16:25:45",
@@ -1986,7 +1986,7 @@
         "label": "Follow-up sequence",
         "line": 43,
         "log": {
-          "age_hours": 675.14,
+          "age_hours": 676.88,
           "exists": true,
           "last_rc": 0,
           "last_started_at": "2026-04-23T16:25:26",
@@ -2019,7 +2019,7 @@
         "label": "Follow-up sequence",
         "line": 44,
         "log": {
-          "age_hours": 675.14,
+          "age_hours": 676.88,
           "exists": true,
           "last_rc": 0,
           "last_started_at": "2026-04-23T16:25:26",
@@ -2052,7 +2052,7 @@
         "label": "Bounce handler",
         "line": 48,
         "log": {
-          "age_hours": 5.57,
+          "age_hours": 7.3,
           "exists": true,
           "last_rc": 0,
           "last_started_at": "2026-05-21T14:00:00",
@@ -2085,7 +2085,7 @@
         "label": "Email enrichment",
         "line": 51,
         "log": {
-          "age_hours": 13.56,
+          "age_hours": 15.3,
           "exists": true,
           "last_rc": 0,
           "last_started_at": null,
@@ -2118,7 +2118,7 @@
         "label": "Pipeline automator",
         "line": 54,
         "log": {
-          "age_hours": 8.07,
+          "age_hours": 9.8,
           "exists": true,
           "last_rc": 0,
           "last_started_at": null,
@@ -2151,7 +2151,7 @@
         "label": "Agent health monitor",
         "line": 57,
         "log": {
-          "age_hours": 3.57,
+          "age_hours": 5.3,
           "exists": true,
           "last_rc": 0,
           "last_started_at": "2026-05-21T16:00:00",
@@ -2192,7 +2192,7 @@
     ],
     "missing_expected": [],
     "openclaw_run_sh": {
-      "age_hours": 675.17,
+      "age_hours": 676.9,
       "exists": true,
       "modified_at": "2026-04-23T20:23:49.703402+00:00",
       "path": "/public-review/redacted",
@@ -2208,7 +2208,7 @@
       "age_hours": 0.02,
       "exists": true,
       "load_status": "ok",
-      "modified_at": "2026-05-21T23:33:03.277902+00:00",
+      "modified_at": "2026-05-22T01:17:03.058485+00:00",
       "path": "/public-review/redacted",
       "size_bytes": 21787,
       "status": "ok"
@@ -2444,7 +2444,7 @@
       }
     ],
     "campaign_meta": {
-      "age_hours": 387.26,
+      "age_hours": 388.99,
       "exists": true,
       "load_status": "ok",
       "modified_at": "2026-05-05T20:18:32.100065+00:00",
@@ -2453,10 +2453,10 @@
       "status": "ok"
     }
   },
-  "generated_at": "2026-05-21T23:34:00.554253+00:00",
-  "generated_local": "2026-05-21T19:34:00.609160-04:00",
+  "generated_at": "2026-05-22T01:18:00.266858+00:00",
+  "generated_local": "2026-05-21T21:18:00.313403-04:00",
   "health": {
-    "checked_at": "2026-05-21T23:34:00.554253+00:00",
+    "checked_at": "2026-05-22T01:18:00.266858+00:00",
     "danger_count": 0,
     "issue_count": 5,
     "issues": [
@@ -2503,42 +2503,27 @@
       "system": 42,
       "vendor": 18
     },
-    "inbound_last_run": "2026-05-21T23:30:36.595830+00:00",
+    "inbound_last_run": "2026-05-22T01:15:50.253167+00:00",
     "inbound_meta": {
-      "age_hours": 0.06,
+      "age_hours": 0.04,
       "exists": true,
       "load_status": "ok",
-      "modified_at": "2026-05-21T23:30:36.613979+00:00",
+      "modified_at": "2026-05-22T01:15:50.278653+00:00",
       "path": "/public-review/redacted",
-      "size_bytes": 610794,
+      "size_bytes": 611369,
       "status": "ok"
     },
     "inbound_monday_deferred_count": 14,
     "inbound_monday_deferred_latest": [
       {
-        "age_hours": 1.31,
-        "attempts": 3,
+        "age_hours": 11.79,
+        "attempts": 19,
         "classification": "real_inbound",
         "company": "Example Account",
         "gmail_url": "#",
         "key": "redacted",
         "last_action": "monday_circuit_open",
-        "last_attempt_at": "2026-05-21T23:30:36.566421+00:00",
-        "last_error": "redacted operational error",
-        "queued_at": "2026-05-21T22:15:35.625419+00:00",
-        "sender_email": "lead@example.com",
-        "subject": "Re: Sample project request",
-        "thread": "redacted"
-      },
-      {
-        "age_hours": 10.06,
-        "attempts": 16,
-        "classification": "real_inbound",
-        "company": "Example Account",
-        "gmail_url": "#",
-        "key": "redacted",
-        "last_action": "monday_circuit_open",
-        "last_attempt_at": "2026-05-21T23:15:37.138871+00:00",
+        "last_attempt_at": "2026-05-22T01:15:50.252896+00:00",
         "last_error": "redacted operational error",
         "queued_at": "2026-05-21T13:30:29.843768+00:00",
         "sender_email": "lead@example.com",
@@ -2546,14 +2531,14 @@
         "thread": "redacted"
       },
       {
-        "age_hours": 10.06,
-        "attempts": 16,
+        "age_hours": 11.79,
+        "attempts": 19,
         "classification": "reply",
         "company": "Example Account",
         "gmail_url": "#",
         "key": "redacted",
         "last_action": "monday_circuit_open",
-        "last_attempt_at": "2026-05-21T23:15:37.138793+00:00",
+        "last_attempt_at": "2026-05-22T01:15:50.252808+00:00",
         "last_error": "redacted operational error",
         "queued_at": "2026-05-21T13:30:29.843537+00:00",
         "sender_email": "lead@example.com",
@@ -2561,14 +2546,14 @@
         "thread": "redacted"
       },
       {
-        "age_hours": 10.06,
-        "attempts": 16,
+        "age_hours": 11.79,
+        "attempts": 19,
         "classification": "reply",
         "company": "Example Account",
         "gmail_url": "#",
         "key": "redacted",
         "last_action": "monday_circuit_open",
-        "last_attempt_at": "2026-05-21T23:15:37.138708+00:00",
+        "last_attempt_at": "2026-05-22T01:15:50.252707+00:00",
         "last_error": "redacted operational error",
         "queued_at": "2026-05-21T13:30:29.843452+00:00",
         "sender_email": "lead@example.com",
@@ -2576,14 +2561,14 @@
         "thread": "redacted"
       },
       {
-        "age_hours": 10.06,
-        "attempts": 16,
+        "age_hours": 11.79,
+        "attempts": 19,
         "classification": "reply",
         "company": "Example Account",
         "gmail_url": "#",
         "key": "redacted",
         "last_action": "monday_circuit_open",
-        "last_attempt_at": "2026-05-21T23:15:37.137769+00:00",
+        "last_attempt_at": "2026-05-22T01:15:50.251266+00:00",
         "last_error": "redacted operational error",
         "queued_at": "2026-05-21T13:30:31.014676+00:00",
         "sender_email": "lead@example.com",
@@ -2591,14 +2576,14 @@
         "thread": "redacted"
       },
       {
-        "age_hours": 10.06,
-        "attempts": 16,
+        "age_hours": 11.79,
+        "attempts": 19,
         "classification": "real_inbound",
         "company": "Example Account",
         "gmail_url": "#",
         "key": "redacted",
         "last_action": "monday_circuit_open",
-        "last_attempt_at": "2026-05-21T23:15:37.136888+00:00",
+        "last_attempt_at": "2026-05-22T01:15:50.250310+00:00",
         "last_error": "redacted operational error",
         "queued_at": "2026-05-21T13:30:31.013944+00:00",
         "sender_email": "lead@example.com",
@@ -2606,14 +2591,14 @@
         "thread": "redacted"
       },
       {
-        "age_hours": 10.06,
-        "attempts": 16,
+        "age_hours": 11.79,
+        "attempts": 19,
         "classification": "reply",
         "company": "Example Account",
         "gmail_url": "#",
         "key": "redacted",
         "last_action": "monday_circuit_open",
-        "last_attempt_at": "2026-05-21T23:15:37.136023+00:00",
+        "last_attempt_at": "2026-05-22T01:15:50.249011+00:00",
         "last_error": "redacted operational error",
         "queued_at": "2026-05-21T13:30:31.013104+00:00",
         "sender_email": "lead@example.com",
@@ -2621,14 +2606,14 @@
         "thread": "redacted"
       },
       {
-        "age_hours": 10.06,
-        "attempts": 16,
+        "age_hours": 11.79,
+        "attempts": 19,
         "classification": "real_inbound",
         "company": "Example Account",
         "gmail_url": "#",
         "key": "redacted",
         "last_action": "monday_circuit_open",
-        "last_attempt_at": "2026-05-21T23:15:37.131344+00:00",
+        "last_attempt_at": "2026-05-22T01:15:50.242229+00:00",
         "last_error": "redacted operational error",
         "queued_at": "2026-05-21T13:30:31.007710+00:00",
         "sender_email": "lead@example.com",
@@ -2636,14 +2621,14 @@
         "thread": "redacted"
       },
       {
-        "age_hours": 10.54,
-        "attempts": 16,
+        "age_hours": 12.27,
+        "attempts": 19,
         "classification": "reply",
         "company": "Example Account",
         "gmail_url": "#",
         "key": "redacted",
         "last_action": "monday_circuit_open",
-        "last_attempt_at": "2026-05-21T23:15:37.130837+00:00",
+        "last_attempt_at": "2026-05-22T01:15:50.241541+00:00",
         "last_error": "redacted operational error",
         "queued_at": "2026-05-21T13:01:31.678410+00:00",
         "sender_email": "lead@example.com",
@@ -2651,14 +2636,14 @@
         "thread": "redacted"
       },
       {
-        "age_hours": 10.06,
-        "attempts": 16,
+        "age_hours": 11.79,
+        "attempts": 19,
         "classification": "real_inbound",
         "company": "Example Account",
         "gmail_url": "#",
         "key": "redacted",
         "last_action": "monday_circuit_open",
-        "last_attempt_at": "2026-05-21T23:15:37.129582+00:00",
+        "last_attempt_at": "2026-05-22T01:15:50.240269+00:00",
         "last_error": "redacted operational error",
         "queued_at": "2026-05-21T13:30:31.005609+00:00",
         "sender_email": "lead@example.com",
@@ -2666,14 +2651,14 @@
         "thread": "redacted"
       },
       {
-        "age_hours": 10.06,
-        "attempts": 16,
+        "age_hours": 11.79,
+        "attempts": 19,
         "classification": "reply",
         "company": "Example Account",
         "gmail_url": "#",
         "key": "redacted",
         "last_action": "monday_circuit_open",
-        "last_attempt_at": "2026-05-21T23:15:37.126542+00:00",
+        "last_attempt_at": "2026-05-22T01:15:50.236675+00:00",
         "last_error": "redacted operational error",
         "queued_at": "2026-05-21T13:30:31.001867+00:00",
         "sender_email": "lead@example.com",
@@ -2681,14 +2666,14 @@
         "thread": "redacted"
       },
       {
-        "age_hours": 10.06,
-        "attempts": 16,
+        "age_hours": 11.79,
+        "attempts": 19,
         "classification": "reply",
         "company": "Example Account",
         "gmail_url": "#",
         "key": "redacted",
         "last_action": "monday_circuit_open",
-        "last_attempt_at": "2026-05-21T23:15:37.121736+00:00",
+        "last_attempt_at": "2026-05-22T01:15:50.229849+00:00",
         "last_error": "redacted operational error",
         "queued_at": "2026-05-21T13:30:30.993984+00:00",
         "sender_email": "lead@example.com",
@@ -2696,14 +2681,14 @@
         "thread": "redacted"
       },
       {
-        "age_hours": 10.06,
-        "attempts": 7,
+        "age_hours": 11.79,
+        "attempts": 10,
         "classification": "real_inbound",
         "company": "Example Account",
         "gmail_url": "#",
         "key": "redacted",
         "last_action": "monday_circuit_open",
-        "last_attempt_at": "2026-05-21T23:15:37.118210+00:00",
+        "last_attempt_at": "2026-05-22T01:15:50.220747+00:00",
         "last_error": "redacted operational error",
         "queued_at": "2026-05-21T13:30:30.988045+00:00",
         "sender_email": "lead@example.com",
@@ -2711,7 +2696,22 @@
         "thread": "redacted"
       },
       {
-        "age_hours": 4.56,
+        "age_hours": 3.04,
+        "attempts": 6,
+        "classification": "real_inbound",
+        "company": "Example Account",
+        "gmail_url": "#",
+        "key": "redacted",
+        "last_action": "monday_circuit_open",
+        "last_attempt_at": "2026-05-22T01:15:50.216931+00:00",
+        "last_error": "redacted operational error",
+        "queued_at": "2026-05-21T22:15:35.625419+00:00",
+        "sender_email": "lead@example.com",
+        "subject": "Re: Sample project request",
+        "thread": "redacted"
+      },
+      {
+        "age_hours": 6.29,
         "attempts": 2,
         "classification": "reply",
         "company": "Example Account",
@@ -2733,8 +2733,8 @@
     "inbound_waiting": [
       {
         "account": "redacted",
-        "age_hours": 25.87,
-        "alert_age_hours": 1.81,
+        "age_hours": 27.6,
+        "alert_age_hours": 3.54,
         "classification": "real_inbound",
         "company": "Example Account",
         "gmail_url": "#",
@@ -2753,8 +2753,8 @@
       },
       {
         "account": "redacted",
-        "age_hours": 1.42,
-        "alert_age_hours": 1.31,
+        "age_hours": 3.16,
+        "alert_age_hours": 3.04,
         "classification": "real_inbound",
         "company": "Example Account",
         "gmail_url": "#",
@@ -2773,8 +2773,8 @@
       },
       {
         "account": "redacted",
-        "age_hours": 0.61,
-        "alert_age_hours": 0.56,
+        "age_hours": 2.35,
+        "alert_age_hours": 2.29,
         "classification": "reply",
         "company": "Example Account",
         "gmail_url": "#",
@@ -2795,84 +2795,84 @@
     "inbound_waiting_count": 3,
     "latest_reminders": [
       {
-        "age_hours": 1066.57,
+        "age_hours": 1068.3,
         "item_id": "redacted",
         "last_reminded": "2026-04-07T13:00:03.704310+00:00"
       },
       {
-        "age_hours": 1066.57,
+        "age_hours": 1068.3,
         "item_id": "redacted",
         "last_reminded": "2026-04-07T13:00:03.190682+00:00"
       },
       {
-        "age_hours": 1066.57,
+        "age_hours": 1068.3,
         "item_id": "redacted",
         "last_reminded": "2026-04-07T13:00:02.640192+00:00"
       },
       {
-        "age_hours": 1138.57,
+        "age_hours": 1140.3,
         "item_id": "redacted",
         "last_reminded": "2026-04-04T13:00:02.928067+00:00"
       },
       {
-        "age_hours": 1138.57,
+        "age_hours": 1140.3,
         "item_id": "redacted",
         "last_reminded": "2026-04-04T13:00:02.406141+00:00"
       },
       {
-        "age_hours": 1186.57,
+        "age_hours": 1188.3,
         "item_id": "redacted",
         "last_reminded": "2026-04-02T13:00:03.677719+00:00"
       },
       {
-        "age_hours": 1186.57,
+        "age_hours": 1188.3,
         "item_id": "redacted",
         "last_reminded": "2026-04-02T13:00:03.145836+00:00"
       },
       {
-        "age_hours": 1210.56,
+        "age_hours": 1212.3,
         "item_id": "redacted",
         "last_reminded": "2026-04-01T13:00:08.246172+00:00"
       }
     ],
     "oldest_reminders": [
       {
-        "age_hours": 1210.57,
+        "age_hours": 1212.3,
         "item_id": "redacted",
         "last_reminded": "2026-04-01T13:00:02.165420+00:00"
       },
       {
-        "age_hours": 1210.57,
+        "age_hours": 1212.3,
         "item_id": "redacted",
         "last_reminded": "2026-04-01T13:00:02.673825+00:00"
       },
       {
-        "age_hours": 1210.57,
+        "age_hours": 1212.3,
         "item_id": "redacted",
         "last_reminded": "2026-04-01T13:00:03.229459+00:00"
       },
       {
-        "age_hours": 1210.57,
+        "age_hours": 1212.3,
         "item_id": "redacted",
         "last_reminded": "2026-04-01T13:00:03.771273+00:00"
       },
       {
-        "age_hours": 1210.57,
+        "age_hours": 1212.3,
         "item_id": "redacted",
         "last_reminded": "2026-04-01T13:00:04.297063+00:00"
       },
       {
-        "age_hours": 1210.57,
+        "age_hours": 1212.3,
         "item_id": "redacted",
         "last_reminded": "2026-04-01T13:00:04.933478+00:00"
       },
       {
-        "age_hours": 1210.57,
+        "age_hours": 1212.3,
         "item_id": "redacted",
         "last_reminded": "2026-04-01T13:00:05.465194+00:00"
       },
       {
-        "age_hours": 1210.57,
+        "age_hours": 1212.3,
         "item_id": "redacted",
         "last_reminded": "2026-04-01T13:00:06.084026+00:00"
       }
@@ -2884,10 +2884,10 @@
     "openphone_last_new_count": "redacted",
     "openphone_last_poll": "redacted",
     "openphone_meta": {
-      "age_hours": 0.07,
+      "age_hours": 0.3,
       "exists": true,
       "load_status": "ok",
-      "modified_at": "2026-05-21T23:30:01.502791+00:00",
+      "modified_at": "2026-05-22T01:00:02.089367+00:00",
       "path": "/public-review/redacted",
       "size_bytes": 19669,
       "status": "ok"
@@ -2895,7 +2895,7 @@
     "openphone_seen_count": "redacted",
     "reminder_count": 19,
     "reminder_meta": {
-      "age_hours": 1066.57,
+      "age_hours": 1068.3,
       "exists": true,
       "load_status": "ok",
       "modified_at": "2026-04-07T13:00:03+00:00",
@@ -2904,7 +2904,7 @@
       "status": "ok"
     },
     "stale_lead_log": {
-      "age_hours": 11.56,
+      "age_hours": 13.29,
       "exists": true,
       "last_rc": 0,
       "last_started_at": "2026-05-21T08:00:00",
@@ -2932,7 +2932,7 @@
       "last_endpoint": "mixed_people/api_search",
       "last_error": "redacted operational error",
       "meta": {
-        "age_hours": 74.12,
+        "age_hours": 75.86,
         "exists": true,
         "load_status": "ok",
         "modified_at": "2026-05-18T21:26:39.917065+00:00",
@@ -2953,7 +2953,7 @@
       "cache_count": 1,
       "cache_file": "/Users/review/.openclaw/workspace/apollo_bridge_cache.json",
       "cache_meta": {
-        "age_hours": 75.06,
+        "age_hours": 76.8,
         "exists": true,
         "load_status": "ok",
         "modified_at": "2026-05-18T20:30:16.026011+00:00",
@@ -2972,7 +2972,7 @@
       "last_result_count": 0,
       "last_search_at": "2026-05-18T21:26:39.917465+00:00",
       "meta": {
-        "age_hours": 74.12,
+        "age_hours": 75.86,
         "exists": true,
         "load_status": "ok",
         "modified_at": "2026-05-18T21:26:39.917766+00:00",
@@ -2987,7 +2987,7 @@
     "apollo_mcp": {
       "active_servers": [],
       "auth_cache_meta": {
-        "age_hours": 410.37,
+        "age_hours": 412.1,
         "exists": true,
         "load_status": "ok",
         "modified_at": "2026-05-04T21:12:05.645649+00:00",
@@ -3009,7 +3009,7 @@
       "latest_log_age_hours": "redacted",
       "log_count": "redacted",
       "mcp_info_meta": {
-        "age_hours": 1400.24,
+        "age_hours": 1401.97,
         "exists": true,
         "load_status": "ok",
         "modified_at": "2026-03-24T15:19:37.257344+00:00",
@@ -3023,7 +3023,7 @@
     },
     "monday": {
       "blocked": true,
-      "blocked_for_hours": 1.95,
+      "blocked_for_hours": 0.21,
       "blocked_until": "2026-05-22T01:30:42.930409+00:00",
       "cooldown_hours": 6,
       "dashboard_status": "warn",
@@ -3032,7 +3032,7 @@
       "last_rate_limit_at": "2026-05-21T19:30:42.930409+00:00",
       "last_success_at": "2026-05-21T13:01:46.682082+00:00",
       "meta": {
-        "age_hours": 4.06,
+        "age_hours": 5.79,
         "exists": true,
         "load_status": "ok",
         "modified_at": "2026-05-21T19:30:42.930894+00:00",
@@ -3050,7 +3050,7 @@
     "exists": true,
     "files": [
       {
-        "age_hours": 3.57,
+        "age_hours": 5.3,
         "exists": true,
         "last_rc": 0,
         "last_started_at": "2026-05-21T16:00:00",
@@ -3071,7 +3071,7 @@
         ]
       },
       {
-        "age_hours": 74.96,
+        "age_hours": 76.69,
         "exists": true,
         "last_rc": 0,
         "last_started_at": null,
@@ -3092,7 +3092,7 @@
         ]
       },
       {
-        "age_hours": 194.16,
+        "age_hours": 195.89,
         "exists": true,
         "last_rc": 0,
         "last_started_at": null,
@@ -3113,7 +3113,7 @@
         ]
       },
       {
-        "age_hours": 5.57,
+        "age_hours": 7.3,
         "exists": true,
         "last_rc": 0,
         "last_started_at": "2026-05-21T14:00:00",
@@ -3134,14 +3134,14 @@
         ]
       },
       {
-        "age_hours": 0.02,
+        "age_hours": 0.0,
         "exists": true,
         "last_rc": null,
         "last_started_at": null,
-        "modified_at": "2026-05-21T23:33:04.879142+00:00",
+        "modified_at": "2026-05-22T01:17:58.380315+00:00",
         "name": "Example Account",
         "path": "/public-review/redacted",
-        "size_bytes": 786078,
+        "size_bytes": 807525,
         "status": "ok",
         "tail": [
           "redacted",
@@ -3155,7 +3155,7 @@
         ]
       },
       {
-        "age_hours": 243.72,
+        "age_hours": 245.46,
         "exists": true,
         "last_rc": null,
         "last_started_at": null,
@@ -3167,7 +3167,7 @@
         "tail": []
       },
       {
-        "age_hours": 77.93,
+        "age_hours": 79.66,
         "exists": true,
         "last_rc": null,
         "last_started_at": null,
@@ -3188,7 +3188,7 @@
         ]
       },
       {
-        "age_hours": 13.56,
+        "age_hours": 15.3,
         "exists": true,
         "last_rc": 0,
         "last_started_at": null,
@@ -3209,7 +3209,7 @@
         ]
       },
       {
-        "age_hours": 675.14,
+        "age_hours": 676.88,
         "exists": true,
         "last_rc": 0,
         "last_started_at": "2026-04-23T16:25:26",
@@ -3230,14 +3230,14 @@
         ]
       },
       {
-        "age_hours": 0.06,
+        "age_hours": 0.05,
         "exists": true,
         "last_rc": 0,
-        "last_started_at": null,
-        "modified_at": "2026-05-21T23:30:07.339417+00:00",
+        "last_started_at": "2026-05-21T21:15:00",
+        "modified_at": "2026-05-22T01:15:03.406587+00:00",
         "name": "Example Account",
         "path": "/public-review/redacted",
-        "size_bytes": 2296566,
+        "size_bytes": 2305779,
         "status": "ok",
         "tail": [
           "redacted",
@@ -3251,14 +3251,14 @@
         ]
       },
       {
-        "age_hours": 0.06,
+        "age_hours": 0.04,
         "exists": true,
         "last_rc": 0,
         "last_started_at": null,
-        "modified_at": "2026-05-21T23:30:36.730248+00:00",
+        "modified_at": "2026-05-22T01:15:50.407458+00:00",
         "name": "Example Account",
         "path": "/public-review/redacted",
-        "size_bytes": 1100983,
+        "size_bytes": 1110854,
         "status": "ok",
         "tail": [
           "redacted",
@@ -3275,11 +3275,11 @@
         "age_hours": 0.0,
         "exists": true,
         "last_rc": 0,
-        "last_started_at": "2026-05-21T19:34:00",
-        "modified_at": "2026-05-21T23:34:00.412795+00:00",
+        "last_started_at": "2026-05-21T21:18:00",
+        "modified_at": "2026-05-22T01:18:00.136348+00:00",
         "name": "Example Account",
         "path": "/public-review/redacted",
-        "size_bytes": 299791,
+        "size_bytes": 311399,
         "status": "ok",
         "tail": [
           "redacted",
@@ -3293,7 +3293,7 @@
         ]
       },
       {
-        "age_hours": 11.48,
+        "age_hours": 13.22,
         "exists": true,
         "last_rc": 0,
         "last_started_at": null,
@@ -3314,14 +3314,14 @@
         ]
       },
       {
-        "age_hours": 0.07,
+        "age_hours": 0.3,
         "exists": true,
         "last_rc": 0,
-        "last_started_at": "2026-05-21T19:30:00",
-        "modified_at": "2026-05-21T23:30:01.533378+00:00",
+        "last_started_at": "2026-05-21T21:00:00",
+        "modified_at": "2026-05-22T01:00:02.124045+00:00",
         "name": "Example Account",
         "path": "/public-review/redacted",
-        "size_bytes": 68845,
+        "size_bytes": 69775,
         "status": "ok",
         "tail": [
           "redacted",
@@ -3335,7 +3335,7 @@
         ]
       },
       {
-        "age_hours": 675.14,
+        "age_hours": 676.87,
         "exists": true,
         "last_rc": 0,
         "last_started_at": "2026-04-23T16:25:45",
@@ -3351,7 +3351,7 @@
         ]
       },
       {
-        "age_hours": 13.23,
+        "age_hours": 14.96,
         "exists": true,
         "last_rc": 0,
         "last_started_at": null,
@@ -3372,7 +3372,7 @@
         ]
       },
       {
-        "age_hours": 8.07,
+        "age_hours": 9.8,
         "exists": true,
         "last_rc": 0,
         "last_started_at": null,
@@ -3393,7 +3393,7 @@
         ]
       },
       {
-        "age_hours": 12.96,
+        "age_hours": 14.69,
         "exists": true,
         "last_rc": null,
         "last_started_at": null,
@@ -3414,7 +3414,7 @@
         ]
       },
       {
-        "age_hours": 11.31,
+        "age_hours": 13.05,
         "exists": true,
         "last_rc": 0,
         "last_started_at": null,
@@ -3435,7 +3435,7 @@
         ]
       },
       {
-        "age_hours": 11.56,
+        "age_hours": 13.29,
         "exists": true,
         "last_rc": 0,
         "last_started_at": "2026-05-21T08:00:00",
@@ -3459,11 +3459,11 @@
         "age_hours": 0.0,
         "exists": true,
         "last_rc": 0,
-        "last_started_at": "2026-05-21T19:34:00",
-        "modified_at": "2026-05-21T23:34:00.412785+00:00",
+        "last_started_at": "2026-05-21T21:18:00",
+        "modified_at": "2026-05-22T01:18:00.136348+00:00",
         "name": "Example Account",
         "path": "/public-review/redacted",
-        "size_bytes": 736449,
+        "size_bytes": 745965,
         "status": "ok",
         "tail": [
           "redacted",
@@ -3480,11 +3480,11 @@
         "age_hours": 0.0,
         "exists": true,
         "last_rc": 0,
-        "last_started_at": "2026-05-21T19:34:00",
-        "modified_at": "2026-05-21T23:34:00.412796+00:00",
+        "last_started_at": "2026-05-21T21:18:00",
+        "modified_at": "2026-05-22T01:18:00.141309+00:00",
         "name": "Example Account",
         "path": "/public-review/redacted",
-        "size_bytes": 2287698,
+        "size_bytes": 2306340,
         "status": "ok",
         "tail": [
           "redacted",
@@ -3508,7 +3508,7 @@
     "latest": [
       {
         "action": "retry",
-        "age_hours": 77.93,
+        "age_hours": 79.66,
         "at": "2026-05-18T17:38:13.947253+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3522,7 +3522,7 @@
       },
       {
         "action": "retry",
-        "age_hours": 77.94,
+        "age_hours": 79.67,
         "at": "2026-05-18T17:37:52.609706+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3536,7 +3536,7 @@
       },
       {
         "action": "retry",
-        "age_hours": 77.94,
+        "age_hours": 79.67,
         "at": "2026-05-18T17:37:34.686981+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3550,7 +3550,7 @@
       },
       {
         "action": "retry",
-        "age_hours": 77.95,
+        "age_hours": 79.68,
         "at": "2026-05-18T17:37:03.404021+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3564,7 +3564,7 @@
       },
       {
         "action": "retry",
-        "age_hours": 77.96,
+        "age_hours": 79.69,
         "at": "2026-05-18T17:36:34.606973+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3578,7 +3578,7 @@
       },
       {
         "action": "retry",
-        "age_hours": 77.99,
+        "age_hours": 79.72,
         "at": "2026-05-18T17:34:45.836392+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3592,7 +3592,7 @@
       },
       {
         "action": "retry",
-        "age_hours": 78.02,
+        "age_hours": 79.75,
         "at": "2026-05-18T17:33:04.521450+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3606,7 +3606,7 @@
       },
       {
         "action": "retry",
-        "age_hours": 78.02,
+        "age_hours": 79.75,
         "at": "2026-05-18T17:32:57.099813+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3620,7 +3620,7 @@
       },
       {
         "action": "prepare_reply",
-        "age_hours": 78.3,
+        "age_hours": 80.03,
         "at": "2026-05-18T17:16:07.549347+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3634,7 +3634,7 @@
       },
       {
         "action": "prepare_reply",
-        "age_hours": 78.35,
+        "age_hours": 80.08,
         "at": "2026-05-18T17:13:12.525016+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3648,7 +3648,7 @@
       },
       {
         "action": "prepare_reply",
-        "age_hours": 78.39,
+        "age_hours": 80.13,
         "at": "2026-05-18T17:10:22.753090+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3662,7 +3662,7 @@
       },
       {
         "action": "prepare_reply",
-        "age_hours": 78.48,
+        "age_hours": 80.21,
         "at": "2026-05-18T17:05:27.180358+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3676,7 +3676,7 @@
       },
       {
         "action": "dismiss",
-        "age_hours": 78.48,
+        "age_hours": 80.21,
         "at": "2026-05-18T17:05:19.032536+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3690,7 +3690,7 @@
       },
       {
         "action": "prepare_reply",
-        "age_hours": 78.49,
+        "age_hours": 80.22,
         "at": "2026-05-18T17:04:34.502038+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3704,7 +3704,7 @@
       },
       {
         "action": "retry",
-        "age_hours": 79.45,
+        "age_hours": 81.18,
         "at": "2026-05-18T16:07:12.600646+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3718,7 +3718,7 @@
       },
       {
         "action": "prepare_reply",
-        "age_hours": 79.46,
+        "age_hours": 81.19,
         "at": "2026-05-18T16:06:35.409740+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3732,7 +3732,7 @@
       },
       {
         "action": "retry",
-        "age_hours": 139.92,
+        "age_hours": 141.66,
         "at": "2026-05-16T03:38:37.012536+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3746,7 +3746,7 @@
       },
       {
         "action": "retry",
-        "age_hours": 139.93,
+        "age_hours": 141.66,
         "at": "2026-05-16T03:38:12.388841+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3760,7 +3760,7 @@
       },
       {
         "action": "retry",
-        "age_hours": 139.96,
+        "age_hours": 141.69,
         "at": "2026-05-16T03:36:31.637330+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3774,7 +3774,7 @@
       },
       {
         "action": "prepare_reply",
-        "age_hours": 199.46,
+        "age_hours": 201.2,
         "at": "2026-05-13T16:06:17.901110+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3788,7 +3788,7 @@
       },
       {
         "action": "prepare_reply",
-        "age_hours": 199.47,
+        "age_hours": 201.2,
         "at": "2026-05-13T16:05:43.508541+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3802,7 +3802,7 @@
       },
       {
         "action": "prepare_reply",
-        "age_hours": 199.65,
+        "age_hours": 201.39,
         "at": "2026-05-13T15:54:44.880302+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3816,7 +3816,7 @@
       },
       {
         "action": "prepare_reply",
-        "age_hours": 199.85,
+        "age_hours": 201.58,
         "at": "2026-05-13T15:43:12.076202+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3830,7 +3830,7 @@
       },
       {
         "action": "prepare_reply",
-        "age_hours": 199.86,
+        "age_hours": 201.59,
         "at": "2026-05-13T15:42:19.742641+00:00",
         "detail": "Sample sanitized operational detail for public design review.",
         "draft_id": "redacted",
@@ -3844,7 +3844,7 @@
       }
     ],
     "meta": {
-      "age_hours": 77.93,
+      "age_hours": 79.66,
       "exists": true,
       "load_status": "ok",
       "modified_at": "2026-05-18T17:38:13.948668+00:00",
@@ -3918,7 +3918,7 @@
         }
       ],
       "meta": {
-        "age_hours": 8.07,
+        "age_hours": 9.8,
         "exists": true,
         "load_status": "ok",
         "modified_at": "2026-05-21T15:30:02.087622+00:00",
@@ -3983,7 +3983,7 @@
         }
       ],
       "meta": {
-        "age_hours": 5.57,
+        "age_hours": 7.3,
         "exists": true,
         "load_status": "ok",
         "modified_at": "2026-05-21T18:00:03.120198+00:00",
@@ -4094,7 +4094,7 @@
         }
       ],
       "meta": {
-        "age_hours": 13.56,
+        "age_hours": 15.3,
         "exists": true,
         "load_status": "ok",
         "modified_at": "2026-05-21T10:00:09.178144+00:00",
@@ -4114,7 +4114,7 @@
       },
       "latest": [
         {
-          "age_hours": 682.48,
+          "age_hours": 684.21,
           "email": "lead@example.com",
           "last_step_at": "2026-04-23T13:05:18.360144+00:00",
           "step": "bounced",
@@ -4124,7 +4124,7 @@
           ]
         },
         {
-          "age_hours": 682.48,
+          "age_hours": 684.21,
           "email": "lead@example.com",
           "last_step_at": "2026-04-23T13:05:18.360144+00:00",
           "step": "followup_2",
@@ -4134,7 +4134,7 @@
           ]
         },
         {
-          "age_hours": 730.48,
+          "age_hours": 732.21,
           "email": "lead@example.com",
           "last_step_at": "2026-04-21T13:05:27.394214+00:00",
           "step": "followup_3",
@@ -4145,7 +4145,7 @@
           ]
         },
         {
-          "age_hours": 730.48,
+          "age_hours": 732.21,
           "email": "lead@example.com",
           "last_step_at": "2026-04-21T13:05:27.394214+00:00",
           "step": "followup_3",
@@ -4156,7 +4156,7 @@
           ]
         },
         {
-          "age_hours": 730.48,
+          "age_hours": 732.21,
           "email": "lead@example.com",
           "last_step_at": "2026-04-21T13:05:27.394214+00:00",
           "step": "followup_3",
@@ -4167,7 +4167,7 @@
           ]
         },
         {
-          "age_hours": 730.48,
+          "age_hours": 732.21,
           "email": "lead@example.com",
           "last_step_at": "2026-04-21T13:05:27.394214+00:00",
           "step": "followup_3",
@@ -4178,7 +4178,7 @@
           ]
         },
         {
-          "age_hours": 730.48,
+          "age_hours": 732.21,
           "email": "lead@example.com",
           "last_step_at": "2026-04-21T13:05:27.394214+00:00",
           "step": "followup_3",
@@ -4189,7 +4189,7 @@
           ]
         },
         {
-          "age_hours": 730.48,
+          "age_hours": 732.21,
           "email": "lead@example.com",
           "last_step_at": "2026-04-21T13:05:27.394214+00:00",
           "step": "followup_3",
@@ -4201,7 +4201,7 @@
         }
       ],
       "meta": {
-        "age_hours": 675.14,
+        "age_hours": 676.88,
         "exists": true,
         "load_status": "ok",
         "modified_at": "2026-04-23T20:25:26.843150+00:00",
@@ -4212,7 +4212,7 @@
       "stuck_count": 25,
       "stuck_sample": [
         {
-          "age_hours": 730.48,
+          "age_hours": 732.21,
           "email": "lead@example.com",
           "last_step_at": "2026-04-21T13:05:27.394214+00:00",
           "step": "followup_3",
@@ -4223,7 +4223,7 @@
           ]
         },
         {
-          "age_hours": 730.48,
+          "age_hours": 732.21,
           "email": "lead@example.com",
           "last_step_at": "2026-04-21T13:05:27.394214+00:00",
           "step": "followup_3",
@@ -4234,7 +4234,7 @@
           ]
         },
         {
-          "age_hours": 730.48,
+          "age_hours": 732.21,
           "email": "lead@example.com",
           "last_step_at": "2026-04-21T13:05:27.394214+00:00",
           "step": "followup_3",
@@ -4245,7 +4245,7 @@
           ]
         },
         {
-          "age_hours": 730.48,
+          "age_hours": 732.21,
           "email": "lead@example.com",
           "last_step_at": "2026-04-21T13:05:27.394214+00:00",
           "step": "followup_3",
@@ -4256,7 +4256,7 @@
           ]
         },
         {
-          "age_hours": 730.48,
+          "age_hours": 732.21,
           "email": "lead@example.com",
           "last_step_at": "2026-04-21T13:05:27.394214+00:00",
           "step": "followup_3",
@@ -4267,7 +4267,7 @@
           ]
         },
         {
-          "age_hours": 730.48,
+          "age_hours": 732.21,
           "email": "lead@example.com",
           "last_step_at": "2026-04-21T13:05:27.394214+00:00",
           "step": "followup_3",
@@ -4278,7 +4278,7 @@
           ]
         },
         {
-          "age_hours": 730.48,
+          "age_hours": 732.21,
           "email": "lead@example.com",
           "last_step_at": "2026-04-21T13:05:27.394214+00:00",
           "step": "followup_3",
@@ -4289,7 +4289,7 @@
           ]
         },
         {
-          "age_hours": 730.48,
+          "age_hours": 732.21,
           "email": "lead@example.com",
           "last_step_at": "2026-04-21T13:05:27.394214+00:00",
           "step": "followup_3",
@@ -4363,7 +4363,7 @@
         }
       ],
       "meta": {
-        "age_hours": 387.26,
+        "age_hours": 388.99,
         "exists": true,
         "load_status": "ok",
         "modified_at": "2026-05-05T20:18:32.101165+00:00",
@@ -4375,8 +4375,8 @@
       "sent_count": 32
     },
     "replies": {
-      "last_poll": "2026-05-21T04:00:00+00:00",
-      "last_poll_age_hours": 19.57,
+      "last_poll": "2026-05-22T04:00:00+00:00",
+      "last_poll_age_hours": -2.7,
       "latest": [
         {
           "company": "Example Account",
@@ -4389,10 +4389,10 @@
         }
       ],
       "meta": {
-        "age_hours": 0.06,
+        "age_hours": 0.05,
         "exists": true,
         "load_status": "ok",
-        "modified_at": "2026-05-21T23:30:07.271943+00:00",
+        "modified_at": "2026-05-22T01:15:03.326610+00:00",
         "path": "/public-review/redacted",
         "size_bytes": 28492,
         "status": "ok"
@@ -4406,7 +4406,7 @@
     "account_resolver_alias_count": "redacted",
     "account_resolver_domain_count": "redacted",
     "account_resolver_meta": {
-      "age_hours": 74.12,
+      "age_hours": 75.86,
       "exists": true,
       "load_status": "ok",
       "modified_at": "2026-05-18T21:26:39.919780+00:00",
@@ -4463,7 +4463,7 @@
       }
     ],
     "linkedin_meta": {
-      "age_hours": 675.15,
+      "age_hours": 676.88,
       "exists": true,
       "load_status": "ok",
       "modified_at": "2026-04-23T20:25:10.110458+00:00",
@@ -4843,7 +4843,7 @@
     "multichannel_count": 26,
     "multichannel_last_run": "2026-05-21T12:05:00.781911+00:00",
     "multichannel_meta": {
-      "age_hours": 802.32,
+      "age_hours": 804.05,
       "exists": true,
       "load_status": "ok",
       "modified_at": "2026-04-18T13:15:03+00:00",
@@ -4852,7 +4852,7 @@
       "status": "ok"
     },
     "multichannel_queue_meta": {
-      "age_hours": 11.48,
+      "age_hours": 13.22,
       "exists": true,
       "load_status": "ok",
       "modified_at": "2026-05-21T12:05:00.788425+00:00",
@@ -5190,7 +5190,7 @@
       }
     ],
     "permit_meta": {
-      "age_hours": 13.23,
+      "age_hours": 14.96,
       "exists": true,
       "load_status": "ok",
       "modified_at": "2026-05-21T10:20:11.555361+00:00",
@@ -5345,7 +5345,7 @@
       "Tier C": 1
     },
     "project_radar_config_meta": {
-      "age_hours": 187.75,
+      "age_hours": 189.48,
       "exists": true,
       "load_status": "ok",
       "modified_at": "2026-05-14T03:49:13.870142+00:00",
@@ -5588,7 +5588,7 @@
       }
     ],
     "project_radar_meta": {
-      "age_hours": 84.96,
+      "age_hours": 86.69,
       "exists": true,
       "load_status": "ok",
       "modified_at": "2026-05-18T10:36:26.424219+00:00",
@@ -5775,7 +5775,7 @@
   "schema_version": 1,
   "state_files": [
     {
-      "age_hours": 387.26,
+      "age_hours": 388.99,
       "critical": true,
       "exists": true,
       "modified_at": "2026-05-05T20:18:32.101165+00:00",
@@ -5785,7 +5785,7 @@
       "status": "ok"
     },
     {
-      "age_hours": 675.14,
+      "age_hours": 676.88,
       "critical": true,
       "exists": true,
       "modified_at": "2026-04-23T20:25:26.843150+00:00",
@@ -5795,17 +5795,17 @@
       "status": "ok"
     },
     {
-      "age_hours": 0.06,
+      "age_hours": 0.05,
       "critical": true,
       "exists": true,
-      "modified_at": "2026-05-21T23:30:07.271943+00:00",
+      "modified_at": "2026-05-22T01:15:03.326610+00:00",
       "name": "Example Account",
       "path": "/public-review/redacted",
       "size_bytes": 28492,
       "status": "ok"
     },
     {
-      "age_hours": 13.56,
+      "age_hours": 15.3,
       "critical": true,
       "exists": true,
       "modified_at": "2026-05-21T10:00:09.178144+00:00",
@@ -5815,7 +5815,7 @@
       "status": "ok"
     },
     {
-      "age_hours": 682.47,
+      "age_hours": 684.2,
       "critical": true,
       "exists": true,
       "modified_at": "2026-04-23T13:05:46+00:00",
@@ -5825,7 +5825,7 @@
       "status": "ok"
     },
     {
-      "age_hours": 703.73,
+      "age_hours": 705.46,
       "critical": true,
       "exists": true,
       "modified_at": "2026-04-22T15:50:06.808204+00:00",
@@ -5835,7 +5835,7 @@
       "status": "ok"
     },
     {
-      "age_hours": 5.57,
+      "age_hours": 7.3,
       "critical": false,
       "exists": true,
       "modified_at": "2026-05-21T18:00:03.120198+00:00",
@@ -5845,7 +5845,7 @@
       "status": "ok"
     },
     {
-      "age_hours": 387.26,
+      "age_hours": 388.99,
       "critical": false,
       "exists": true,
       "modified_at": "2026-05-05T20:18:32.100065+00:00",
@@ -5858,14 +5858,14 @@
       "age_hours": 0.02,
       "critical": false,
       "exists": true,
-      "modified_at": "2026-05-21T23:33:03.277902+00:00",
+      "modified_at": "2026-05-22T01:17:03.058485+00:00",
       "name": "Example Account",
       "path": "/public-review/redacted",
       "size_bytes": 21787,
       "status": "ok"
     },
     {
-      "age_hours": 8.07,
+      "age_hours": 9.8,
       "critical": false,
       "exists": true,
       "modified_at": "2026-05-21T15:30:02.087622+00:00",
@@ -5875,7 +5875,7 @@
       "status": "ok"
     },
     {
-      "age_hours": 1066.57,
+      "age_hours": 1068.3,
       "critical": false,
       "exists": true,
       "modified_at": "2026-04-07T13:00:03+00:00",
@@ -5885,7 +5885,7 @@
       "status": "ok"
     },
     {
-      "age_hours": 13.23,
+      "age_hours": 14.96,
       "critical": false,
       "exists": true,
       "modified_at": "2026-05-21T10:20:11.555361+00:00",
@@ -5895,7 +5895,7 @@
       "status": "ok"
     },
     {
-      "age_hours": 675.15,
+      "age_hours": 676.88,
       "critical": false,
       "exists": true,
       "modified_at": "2026-04-23T20:25:10.110458+00:00",
@@ -5905,7 +5905,7 @@
       "status": "ok"
     },
     {
-      "age_hours": 802.32,
+      "age_hours": 804.05,
       "critical": false,
       "exists": true,
       "modified_at": "2026-04-18T13:15:03+00:00",
@@ -5915,7 +5915,7 @@
       "status": "ok"
     },
     {
-      "age_hours": 11.48,
+      "age_hours": 13.22,
       "critical": false,
       "exists": true,
       "modified_at": "2026-05-21T12:05:00.788425+00:00",
@@ -5925,27 +5925,27 @@
       "status": "ok"
     },
     {
-      "age_hours": 0.07,
+      "age_hours": 0.3,
       "critical": false,
       "exists": true,
-      "modified_at": "2026-05-21T23:30:01.502791+00:00",
+      "modified_at": "2026-05-22T01:00:02.089367+00:00",
       "name": "Example Account",
       "path": "/public-review/redacted",
       "size_bytes": 19669,
       "status": "ok"
     },
     {
-      "age_hours": 0.06,
+      "age_hours": 0.04,
       "critical": false,
       "exists": true,
-      "modified_at": "2026-05-21T23:30:36.613979+00:00",
+      "modified_at": "2026-05-22T01:15:50.278653+00:00",
       "name": "Example Account",
       "path": "/public-review/redacted",
-      "size_bytes": 610794,
+      "size_bytes": 611369,
       "status": "ok"
     },
     {
-      "age_hours": 84.96,
+      "age_hours": 86.69,
       "critical": false,
       "exists": true,
       "modified_at": "2026-05-18T10:36:26.424219+00:00",
@@ -5955,7 +5955,7 @@
       "status": "ok"
     },
     {
-      "age_hours": 74.12,
+      "age_hours": 75.86,
       "critical": false,
       "exists": true,
       "modified_at": "2026-05-18T21:26:39.919780+00:00",
@@ -5965,17 +5965,17 @@
       "status": "ok"
     },
     {
-      "age_hours": 0.07,
+      "age_hours": 0.3,
       "critical": false,
       "exists": true,
-      "modified_at": "2026-05-21T23:30:01.508161+00:00",
+      "modified_at": "2026-05-22T01:00:02.100314+00:00",
       "name": "Example Account",
       "path": "/public-review/redacted",
-      "size_bytes": 66045,
+      "size_bytes": 66049,
       "status": "ok"
     },
     {
-      "age_hours": 77.93,
+      "age_hours": 79.66,
       "critical": false,
       "exists": true,
       "modified_at": "2026-05-18T17:38:13.948668+00:00",
@@ -6313,7 +6313,7 @@
       }
     ],
     "subagent_count": 3,
-    "updated_at": "2026-05-21T23:34:00.554253+00:00",
+    "updated_at": "2026-05-22T01:18:00.266858+00:00",
     "workstreams": [
       {
         "handoff": "News/RSS discovery and official permit-source discovery are split into live deterministic jobs.",

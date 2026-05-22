@@ -238,7 +238,11 @@ main {
 .assistant-desk {
   display: grid;
   gap: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
+}
+
+.operator-lanes-wrap {
+  margin-top: 18px;
 }
 
 .assistant-hero,
@@ -762,6 +766,267 @@ main {
 
 .office-brief-band {
   border-top: 5px solid var(--green);
+}
+
+.virtual-office-shell {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: minmax(0, 1.35fr) minmax(340px, 0.65fr);
+}
+
+.office-floor,
+.office-roster-panel,
+.office-roster-block {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.office-floor {
+  background:
+    linear-gradient(90deg, rgba(46, 125, 99, 0.07) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(46, 125, 99, 0.07) 1px, transparent 1px),
+    #fbfcf8;
+  background-size: 34px 34px;
+  padding: 14px;
+}
+
+.office-floor-head {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.office-floor-head strong {
+  display: block;
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+.office-floor-head > span {
+  background: var(--ink);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 780;
+  padding: 7px 10px;
+}
+
+.office-room-board {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.office-suite {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--green);
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(22, 27, 31, 0.08);
+  display: grid;
+  gap: 10px;
+  grid-column: span 2;
+  min-height: 246px;
+  min-width: 0;
+  padding: 12px;
+}
+
+.office-suite.command {
+  grid-column: span 3;
+}
+
+.office-suite.inbox {
+  grid-column: span 3;
+}
+
+.office-suite.outreach,
+.office-suite.radar {
+  min-height: 270px;
+}
+
+.office-suite.warn,
+.office-suite.paused {
+  border-top-color: var(--amber);
+}
+
+.office-suite.danger,
+.office-suite.missing {
+  border-top-color: var(--red);
+}
+
+.office-suite.unknown {
+  border-top-color: var(--blue);
+}
+
+.office-suite header {
+  align-items: flex-start;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.office-suite header div {
+  align-items: center;
+  display: flex;
+  gap: 9px;
+  min-width: 0;
+}
+
+.office-room-code,
+.agent-avatar {
+  align-items: center;
+  background: var(--ink);
+  border-radius: 8px;
+  color: #fff;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: 12px;
+  font-weight: 800;
+  height: 34px;
+  justify-content: center;
+  width: 34px;
+}
+
+.office-suite strong {
+  display: block;
+  font-size: 17px;
+  overflow-wrap: anywhere;
+}
+
+.office-suite p {
+  color: #374043;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.office-live-light {
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px rgba(46, 125, 99, 0.12);
+  flex: 0 0 auto;
+  height: 10px;
+  margin-top: 11px;
+  width: 10px;
+}
+
+.office-live-light.ok {
+  background: var(--green);
+}
+
+.office-live-light.warn,
+.office-live-light.paused {
+  background: var(--amber);
+  box-shadow: 0 0 0 5px rgba(155, 107, 25, 0.14);
+}
+
+.office-live-light.danger,
+.office-live-light.missing {
+  background: var(--red);
+  box-shadow: 0 0 0 5px rgba(163, 59, 59, 0.14);
+}
+
+.office-live-light.unknown {
+  background: var(--blue);
+  box-shadow: 0 0 0 5px rgba(50, 107, 143, 0.14);
+}
+
+.office-agent-stack,
+.agent-roster-list {
+  display: grid;
+  gap: 8px;
+}
+
+.office-agent,
+.agent-roster-card {
+  align-items: center;
+  background: #f6f8f4;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 9px;
+  grid-template-columns: auto minmax(0, 1fr);
+  min-width: 0;
+  padding: 8px;
+}
+
+.agent-roster-card {
+  grid-template-columns: auto minmax(0, 1fr) auto;
+}
+
+.office-agent.ok .agent-avatar,
+.agent-roster-card.ok .agent-avatar {
+  background: var(--green);
+}
+
+.office-agent.warn .agent-avatar,
+.office-agent.paused .agent-avatar,
+.agent-roster-card.warn .agent-avatar,
+.agent-roster-card.paused .agent-avatar {
+  background: var(--amber);
+}
+
+.office-agent.danger .agent-avatar,
+.office-agent.missing .agent-avatar,
+.agent-roster-card.danger .agent-avatar,
+.agent-roster-card.missing .agent-avatar {
+  background: var(--red);
+}
+
+.office-agent strong,
+.agent-roster-card strong {
+  display: block;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.office-agent small,
+.agent-roster-card small {
+  display: block;
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+
+.office-suite footer {
+  align-items: stretch;
+  display: grid;
+  gap: 7px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.office-suite footer span {
+  background: #f0f4ef;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  display: grid;
+  font-size: 11px;
+  min-height: 48px;
+  padding: 7px;
+}
+
+.office-suite footer b {
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.05;
+}
+
+.office-roster-panel {
+  align-content: start;
+  display: grid;
+  gap: 12px;
+  padding: 12px;
+}
+
+.office-roster-block {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+}
+
+.office-roster-block h3 {
+  margin: 0;
 }
 
 .office-command-grid {
@@ -1422,10 +1687,21 @@ pre {
   .operator-lanes,
   .action-layout,
   .office-command-grid,
+  .virtual-office-shell,
   .account-summary-grid,
   .reply-intel-grid,
   .related-grid {
     grid-template-columns: 1fr;
+  }
+
+  .office-room-board {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .office-suite,
+  .office-suite.command,
+  .office-suite.inbox {
+    grid-column: span 1;
   }
 
   .band {
@@ -1472,10 +1748,29 @@ pre {
   .command-center-grid,
   .operator-lanes,
   .office-command-grid,
+  .virtual-office-shell,
+  .office-room-board,
   .subagent-grid,
   .office-grid,
   .workstream-grid,
   .log-grid {
     grid-template-columns: 1fr;
+  }
+
+  .office-floor,
+  .office-roster-panel {
+    padding: 10px;
+  }
+
+  .office-suite {
+    min-height: auto;
+  }
+
+  .agent-roster-card {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .agent-roster-card .pill {
+    justify-self: start;
   }
 }
